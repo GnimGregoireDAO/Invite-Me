@@ -65,8 +65,8 @@ GetTogether est une application qui permet de créer et gérer des événements 
 ```mermaid
 erDiagram
 
-    Utilisateur ||--o{ Evenement : crée
-    Evenement ||--o{ Lieu : possède
+    Utilisateur ||--o{ Evenement : "crée"
+    Evenement ||--o{ Lieu : "possède"
 
     Utilisateur {
         int id
