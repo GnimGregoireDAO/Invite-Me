@@ -62,6 +62,36 @@ GetTogether est une application qui permet de créer et gérer des événements 
 | Utilisateur | Joel |
 | ÉvénementUtilisateur | Joel |
 
+```mermaid
+erDiagram
+
+    Utilisateur ||--o{ Evenement : "crée"
+    Evenement ||--o{ Lieu : "possède"
+
+    Utilisateur {
+        int id
+        string nom
+        string password
+        timtestamp dateAjout
+        timtestamp dateModification
+    }
+    
+    Evenement {
+        int id
+        string titre
+        string description
+        timtestamp dateAjout
+        timtestamp dateModification
+    }
+
+    Lieu {
+        int id
+        string adresse
+        string pays
+    }
+
+```
+
 ## Aspects techniques
 
 ### Architecture
