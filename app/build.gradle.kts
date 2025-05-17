@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt") // Utiliser directement l'ID du plugin
 }
 
 android {
@@ -36,6 +37,10 @@ android {
 }
 
 dependencies {
+    // Room components
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
