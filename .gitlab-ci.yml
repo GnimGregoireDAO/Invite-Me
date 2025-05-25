@@ -30,9 +30,10 @@ deploy-job:
     - echo "Deploying application..."
     - echo "Application successfully deployed."
 
-trigger-github-actions:  # 👈 Correction du format
+trigger-github-actions:
   stage: deploy
   script:
+    - apt-get update && apt-get install -y curl  # 👈 Installation de curl
     - |
       curl -X POST -H "Authorization: token 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" \
            -H "Accept: application/vnd.github.v3+json" \
