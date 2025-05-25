@@ -49,8 +49,7 @@ sync-issues:
       echo "------ Issues response ------"
       echo "$issues"
       echo "----------------------------"
-      echo "$issues" | jq .
-      for issue in $(echo "$issues" | jq -c '.[]'); do
+      echo "$issues" | jq -c '.[]' | while read -r issue; do
         title=$(echo "$issue" | jq -r '.title')
         body=$(echo "$issue" | jq -r '.description')
         curl -X POST \
