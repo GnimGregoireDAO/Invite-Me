@@ -46,6 +46,10 @@ sync-issues:
     - apt-get update && apt-get install -y curl jq
     - |
       issues=$(curl -s -H "Private-Token: $GITLAB_TOKEN" "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
+      echo "------ Issues response ------"
+      echo "$issues"
+      echo "----------------------------"
+      echo "$issues" | jq .
       for issue in $(echo "$issues" | jq -c '.[]'); do
         title=$(echo "$issue" | jq -r '.title')
         body=$(echo "$issue" | jq -r '.description')
