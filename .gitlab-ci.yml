@@ -35,7 +35,10 @@ sync-repo:
   stage: sync
   script:
     - apt-get update && apt-get install -y git curl jq
-    - git push --mirror git@github.com:GnimGregoireDAO/Invite-Me.git
+    - git config --global user.email "ci-bot@example.com"
+    - git config --global user.name "CI Bot"
+    - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - git push --mirror https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
 
 sync-issues:
   stage: sync
@@ -53,11 +56,14 @@ sync-issues:
           "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
       done
   variables:
-    GITLAB_TOKEN: $GITLAB_TOKEN        # Défini dans les variables CI/CD
-    GITHUB_TOKEN: $GITHUB_TOKEN        # Défini dans les variables CI/CD
+    GITLAB_TOKEN: $GITLAB_TOKEN
+    GITHUB_TOKEN: $GITHUB_TOKEN
 
 sync-tags:
   stage: sync
   script:
-    - git push --tags git@github.com:GnimGregoireDAO/Invite-Me.git
-    - git push --all git@github.com:GnimGregoireDAO/Invite-Me.git
+    - apt-get update && apt-get install -y git
+    - git config --global user.email "ci-bot@example.com"
+    - git config --global user.name "CI Bot"
+    - git push --tags https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - git push --all https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
