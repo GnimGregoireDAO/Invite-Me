@@ -31,30 +31,33 @@ deploy-job:
     - echo "Deploying application..."
     - echo "Application successfully deployed."
 
-sync-repo:  # 👈 Synchronisation GitLab → GitHub
+sync-repo:
   stage: sync
   script:
     - apt-get update && apt-get install -y git curl jq
-    - git push --mirror git@github.com:GnimGregoireDAO/Invite-Me.git  # 🔄 Synchronisation du code
+    - git push --mirror git@github.com:GnimGregoireDAO/Invite-Me.git
 
-sync-issues:  # 👈 Migration des issues GitLab → GitHub
+sync-issues:
   stage: sync
   script:
     - apt-get update && apt-get install -y curl jq
     - |
-      issues=$(curl -s -H "Private-Token: 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" \
-               "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
+      issues=$(curl -s -H "Private-Token: $GITLAB_TOKEN" "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
       for issue in $(echo "$issues" | jq -c '.[]'); do
         title=$(echo "$issue" | jq -r '.title')
         body=$(echo "$issue" | jq -r '.description')
-        curl -X POST -H "Authorization: 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" \
-             -H "Accept: application/vnd.github.v3+json" \
-             -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
-             "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
+        curl -X POST \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
+          "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
       done
+  variables:
+    GITLAB_TOKEN: $GITLAB_TOKEN        # Défini dans les variables CI/CD
+    GITHUB_TOKEN: $GITHUB_TOKEN        # Défini dans les variables CI/CD
 
-sync-tags:  # 👈 Synchronisation des tags et branches GitLab → GitHub
+sync-tags:
   stage: sync
   script:
-    - git push --tags git@github.com:GnimGregoireDAO/Invite-Me.git  # 🔄 Envoi des tags
-    - git push --all git@github.com:GnimGregoireDAO/Invite-Me.git   # 🔄 Envoi de toutes les branches
+    - git push --tags git@github.com:GnimGregoireDAO/Invite-Me.git
+    - git push --all git@github.com:GnimGregoireDAO/Invite-Me.git
