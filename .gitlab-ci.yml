@@ -2,6 +2,7 @@ stages:
   - build
   - test
   - deploy
+  - sync
 
 build-job:
   stage: build
@@ -13,14 +14,14 @@ unit-test-job:
   stage: test
   script:
     - echo "Running unit tests..."
-    - sleep 60
+    - sleep 10
     - echo "Code coverage is 90%"
 
 lint-test-job:
   stage: test
   script:
     - echo "Linting code..."
-    - sleep 10
+    - sleep 5
     - echo "No lint issues found."
 
 deploy-job:
@@ -30,12 +31,29 @@ deploy-job:
     - echo "Deploying application..."
     - echo "Application successfully deployed."
 
-trigger-github-actions:
-  stage: deploy
+sync-repo:  # 👈 Synchronisation GitLab → GitHub
+  stage: sync
   script:
-    - apt-get update && apt-get install -y curl  # 👈 Installation de curl
+    - apt-get update && apt-get install -y git curl jq
+    - git push --mirror git@github.com:GnimGregoireDAO/Invite-Me.git  # 🔄 Synchronisation du code
+
+sync-issues:  # 👈 Migration des issues GitLab → GitHub
+  stage: sync
+  script:
     - |
-      curl -X POST -H "Authorization: token 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" \
-           -H "Accept: application/vnd.github.v3+json" \
-           -d '{"ref":"main"}' \
-           "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/actions/workflows/164152526/dispatches"
+      issues=$(curl -s -H "Private-Token: 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" \
+               "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
+      for issue in $(echo "$issues" | jq -c '.[]'); do
+        title=$(echo "$issue" | jq -r '.title')
+        body=$(echo "$issue" | jq -r '.description')
+        curl -X POST -H "Authorization: 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" \
+             -H "Accept: application/vnd.github.v3+json" \
+             -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
+             "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
+      done
+
+sync-tags:  # 👈 Synchronisation des tags et branches GitLab → GitHub
+  stage: sync
+  script:
+    - git push --tags git@github.com:GnimGregoireDAO/Invite-Me.git  # 🔄 Envoi des tags
+    - git push --all git@github.com:GnimGregoireDAO/Invite-Me.git   # 🔄 Envoi de toutes les branches
