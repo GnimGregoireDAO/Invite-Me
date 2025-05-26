@@ -42,7 +42,6 @@ sync-repo:
     - git branch -a         # DEBUG
     - git status            # DEBUG
     - git checkout main     # S’assurer que la branche existe
-    - # ... tes modifications éventuelles ...
     - git push --force origin main
     - git push --force --tags
 
