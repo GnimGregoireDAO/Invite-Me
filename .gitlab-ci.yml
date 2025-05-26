@@ -37,9 +37,16 @@ sync-repo:
     - apt-get update && apt-get install -y git curl jq
     - git config --global user.email "ci-bot@example.com"
     - git config --global user.name "CI Bot"
-    - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - git clone https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git repo-tmp
+    - cd repo-tmp
+    - git branch -a         # DEBUG
+    - git status            # DEBUG
+    - git checkout main     # S’assurer que la branche existe
+    - # ... tes modifications éventuelles ...
     - git push --force origin main
     - git push --force --tags
+
+    
 
 sync-issues:
   stage: sync
