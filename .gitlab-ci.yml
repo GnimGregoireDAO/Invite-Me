@@ -35,14 +35,11 @@ sync-repo:
   stage: sync
   script:
     - apt-get update && apt-get install -y git curl jq
-    - git config --global user.email "ci-bot@example.com"
-    - git config --global user.name "CI Bot"
-    - git clone https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git repo-tmp
+    - git clone $CI_PROJECT_URL repo-tmp
     - cd repo-tmp
-    - git branch -a         # DEBUG
-    - git status            # DEBUG
-    - git checkout main     # S’assurer que la branche existe
-    - git push --force origin main
+    - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - git fetch --all
+    - for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do git push --force origin $branch; done
     - git push --force --tags
 
     
