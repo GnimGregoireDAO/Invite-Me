@@ -38,7 +38,8 @@ sync-repo:
     - git config --global user.email "ci-bot@example.com"
     - git config --global user.name "CI Bot"
     - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
-    - git push --mirror https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - git push --force origin main
+    - git push --force --tags
 
 sync-issues:
   stage: sync
