@@ -35,7 +35,7 @@ sync-repo:
   stage: sync
   script:
     - apt-get update && apt-get install -y git curl jq
-    - git clone $CI_PROJECT_URL repo-tmp
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git repo-tmp
     - cd repo-tmp
     - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
     - git fetch --all
