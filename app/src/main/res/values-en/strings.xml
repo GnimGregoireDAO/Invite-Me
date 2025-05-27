@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Invite@Me</string>
+    <string name="my_events">My Events</string>
+    <string name="event_title">%1$s\'s training</string>
+    <string name="event_date">Monday, May 12 at 6:00pm</string>
+    <string name="event_address">123 Beaubien St, Montreal, Canada</string>
+    <string name="events_list">Events List</string>
+    <string name="search_events">Search events</string>
+    
+    <!-- Menus -->
+    <string name="menu_change_language">Change language</string>
+    <string name="menu_french">French</string>
+    <string name="menu_english">English</string>
+    <string name="menu_spanish">Spanish</string>
+    
+    <!-- Messages -->
+    <string name="current_language">Current language: %1$s</string>
+    <string name="language_changed">Language changed to %1$s</string>
+</resources>

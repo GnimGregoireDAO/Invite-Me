@@ -1,7 +1,7 @@
-package com.inviteme.repositories
+package com.inviteme.model.repos
 
-import Lieu
-import com.inviteme.dao.LieuDao
+import com.inviteme.model.dao.LieuDao
+import com.inviteme.model.entities.Lieu
 
 class LieuRepository(private val lieuDao: LieuDao) {
 
