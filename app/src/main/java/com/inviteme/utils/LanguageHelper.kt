@@ -49,6 +49,7 @@ class LanguageHelper {
             if (context is AppCompatActivity) {
                 context.recreate()
             }
+            
         }
     }
 }
