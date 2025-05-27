@@ -44,27 +44,32 @@ sync-repo:
 
     
 
-sync-issues:
-  stage: sync
-  script:
-    - apt-get update && apt-get install -y curl jq
-    - |
-      issues=$(curl -s -H "Private-Token: $GITLAB_TOKEN" "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
-      echo "------ Issues response ------"
-      echo "$issues"
-      echo "----------------------------"
-      echo "$issues" | jq -c '.[]' | while read -r issue; do
-        title=$(echo "$issue" | jq -r '.title')
-        body=$(echo "$issue" | jq -r '.description')
-        curl -X POST \
-          -H "Authorization: token $GITHUB_TOKEN" \
-          -H "Accept: application/vnd.github.v3+json" \
-          -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
-          "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
-      done
-  variables:
-    GITLAB_TOKEN: $GITLAB_TOKEN
-    GITHUB_TOKEN: $GITHUB_TOKEN
+# sync-issues:
+#   stage: sync
+#   script:
+#     - apt-get update && apt-get install -y curl jq  # Mise à jour et installation des outils nécessaires
+#     - |
+#       # Récupération des issues depuis GitLab
+#       issues=$(curl -s -H "Private-Token: $GITLAB_TOKEN" "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
+#       echo "------ Issues response ------"
+#       echo "$issues"
+#       echo "----------------------------"
+
+#       # Boucle pour traiter chaque issue et les envoyer à GitHub
+#       echo "$issues" | jq -c '.[]' | while read -r issue; do
+#         title=$(echo "$issue" | jq -r '.title')  # Extraction du titre
+#         body=$(echo "$issue" | jq -r '.description')  # Extraction de la description
+
+#         # Envoi de l'issue à GitHub
+#         curl -X POST \
+#           -H "Authorization: token $GITHUB_TOKEN" \
+#           -H "Accept: application/vnd.github.v3+json" \
+#           -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
+#           "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
+#       done
+#   variables:
+#     GITLAB_TOKEN: $GITLAB_TOKEN  # Token GitLab pour l'authentification
+#     GITHUB_TOKEN: $GITHUB_TOKEN  # Token GitHub pour l'authentification
 
 sync-tags:
   stage: sync
