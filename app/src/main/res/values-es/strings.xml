@@ -16,4 +16,5 @@
     <!-- Messages -->
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
+    <string name="venement">evento</string>
 </resources>
