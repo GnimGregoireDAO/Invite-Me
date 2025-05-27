@@ -1,8 +1,8 @@
+package com.inviteme.model.entities
 
-import androidx.room.PrimaryKey
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "lieux")
 data class Lieu(
@@ -13,9 +13,9 @@ data class Lieu(
     val adresse: String,
 
     @ColumnInfo(name = "pays")
-    val pays: String,
+    val pays: String
 
-    @ColumnInfo(name = "ville")
+    /*@ColumnInfo(name = "ville")
     val ville: String = "",
 
     @ColumnInfo(name = "code_postal")
@@ -25,5 +25,5 @@ data class Lieu(
     val latitude: Double? = null,
 
     @ColumnInfo(name = "longitude")
-    val longitude: Double? = null
+    val longitude: Double? = null*/
 )

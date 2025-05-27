@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">inv@teMe</string>
+    <string name="app_name">Invite@Me</string>
+    <string name="my_events">Mes événements</string>
+    <string name="event_title">Formation de %1$s</string>
+    <string name="event_date">Lundi, 12 mai à 18:00</string>
+    <string name="event_address">123 rue Beaubien, Montréal, Canada</string>
+    <string name="events_list">Liste des événements</string>
+    <string name="search_events">Rechercher des événements</string>
+    
+    <!-- Menus -->
+    <string name="menu_change_language">Changer de langue</string>
+    <string name="menu_french">Français</string>
+    <string name="menu_english">Anglais</string>
+    <string name="menu_spanish">Espagnol</string>
+    
+    <!-- Messages -->
+    <string name="current_language">Langue actuelle : %1$s</string>
+    <string name="language_changed">Langue changée en %1$s</string>
 </resources>

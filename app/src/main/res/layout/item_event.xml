@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="evenement"
+            type="com.inviteme.model.entities.Evenement" />
+    </data>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <!-- Zone de l'icône -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+                
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:contentDescription="Calendar icon"/>
+            </RelativeLayout>
+            
+            <!-- Zone du texte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/eventCardBackground"
+                android:padding="16dp">
+                
+                <TextView
+                    android:id="@+id/tvTitre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{@string/event_title(evenement.titre)}"
+                    android:textStyle="bold"
+                    android:textColor="@color/eventCardTitle"
+                    android:textSize="16sp"
+                    tools:text="Formation de Joel"/>
+                
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event_date"
+                    android:textColor="@color/eventCardTitle"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+                    
+                <TextView
+                    android:id="@+id/tvAdresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event_address"
+                    android:textColor="@color/eventCardTitle"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
