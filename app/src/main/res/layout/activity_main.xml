@@ -24,10 +24,10 @@
     <!-- Remember me -->
 
     <TextView
-        android:id="@+id/loginTitle"
+        android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="USER LOGIN"
+        android:text="CONNEXION UTILISATEUR"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -38,13 +38,13 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
     <EditText
-        android:id="@+id/emailEditText"
+        android:id="@+id/Email_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/rouned_texttile"
-        android:hint="Email"
+        android:hint="Courriel"
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#888888"
@@ -52,17 +52,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
         app:layout_constraintVertical_bias="0.072" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/password_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/rouned_texttile"
-        android:hint="Password"
+        android:hint="Mot de passe"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#000000"
@@ -71,42 +71,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/Email_login"
         app:layout_constraintVertical_bias="0.077" />
 
     <CheckBox
-        android:id="@+id/rememberCheckBox"
+        android:id="@+id/remember_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember me"
+        android:text="Se souvenir de moi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/password_login"
         app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log in"
+        android:text="Connexion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/password_login"
         app:layout_constraintVertical_bias="0.481" />
 
     <TextView
-        android:id="@+id/Forgot_password"
+        android:id="@+id/forgot_password_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
-        android:text="forgot password?"
+        android:text="Mot de passe oublié?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/password_login"
         app:layout_constraintVertical_bias="0.179" />
 
     <FrameLayout

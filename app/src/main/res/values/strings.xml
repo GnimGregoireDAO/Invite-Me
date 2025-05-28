@@ -28,4 +28,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="login_title">CONNEXION UTILISATEUR</string>
+    <string name="Email_login">Courriel</string>
+    <string name="password_login">Mot de passe</string>
+    <string name="remember_checkbox">Se souvenir de moi</string>
+    <string name="forgot_password_button">Mot de passe oublié?</string>
+    <string name="login_button">Connexion</string>
 </resources>

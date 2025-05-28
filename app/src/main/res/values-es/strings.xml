@@ -17,4 +17,10 @@
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
     <string name="venement">evento</string>
+    <string name="login_title">INICIO DE SESIÓN DE USUARIO</string>
+    <string name="Email_login">"Correo electrónico "</string>
+    <string name="password_login">Contraseña</string>
+    <string name="remember_checkbox">"Acuérdate de mí "</string>
+    <string name="forgot_password_button">¿Has olvidado tu contraseña?</string>
+    <string name="login_button">" Acceso"</string>
 </resources>
