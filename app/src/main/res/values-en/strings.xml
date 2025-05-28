@@ -17,4 +17,10 @@
     <string name="current_language">Current language: %1$s</string>
     <string name="language_changed">Language changed to %1$s</string>
     <string name="venement">Event</string>
+    <string name="login_title">USER LOGIN</string>
+    <string name="Email_login">Email</string>
+    <string name="password_login">Password</string>
+    <string name="remember_checkbox">Remember me</string>
+    <string name="forgot_password_button">Forgot password?</string>
+    <string name="login_button">Login</string>
 </resources>
