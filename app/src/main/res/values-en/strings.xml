@@ -32,4 +32,13 @@
     <string name="terms_checkbox">Terms and conditions</string>
     <string name="signup_button">Create account</string>
     <string name="cr_ez_un_compte">CREATE ACCOUNT</string>
+    <string name="ajouter_un_v_nement">Add an event</string>
+    <string name="nom_titre_de_l_evenement">Name/title of the event</string>
+    <string name="type_de_l_evenement">Event type</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Location of the event (address - online?)</string>
+    <string name="description_de_l_v_nement_ici">The Description of you event goes here.</string>
+    <string name="date_label">Event Date ( pick here)</string>
+    <string name="time_picker">Event TIme ( Pick here )</string>
+    <string name="ajouter_btn">Add</string>
+    <string name="btn_annuler">cancel</string>
 </resources>

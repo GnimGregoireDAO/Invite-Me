@@ -43,4 +43,17 @@
     <string name="terms_checkbox">Termes et conditions</string>
     <string name="signup_button">Créer un compte</string>
     <string name="cr_ez_un_compte">CRÉEZ UN COMPTE</string>
+    <string name="title_activity_ajouter_evenement">AjouterEvenementActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ajouter_un_v_nement">Ajouter un évènement</string>
+    <string name="nom_titre_de_l_evenement">Nom/Titre de l\'evenement</string>
+    <string name="type_de_l_evenement">Type de l\'evenement</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Lieu de l\'évènement (addresse - en ligne ?)</string>
+    <string name="description_de_l_v_nement_ici">Description de l\'évènement ici</string>
+    <string name="date_label">Date de l\'évenement ( sélectionez ici)</string>
+    <string name="time_picker">Heure de l\'évènement ( sélectionnez ici )</string>
+    <string name="ajouter_btn">Ajouter</string>
+    <string name="btn_annuler">Annuler</string>
 </resources>
