@@ -23,4 +23,13 @@
     <string name="remember_checkbox">"Acuérdate de mí "</string>
     <string name="forgot_password_button">¿Has olvidado tu contraseña?</string>
     <string name="login_button">" Acceso"</string>
+    <string name="signup_title">" inscribirse"</string>
+    <string name="prenom_signup">" Nombre de pila"</string>
+    <string name="nom_signup">" Apellido"</string>
+    <string name="email_signup">"Correo electrónico "</string>
+    <string name="password_signup">"Contraseña "</string>
+    <string name="confirm_password_login">" Confirmar Contraseña"</string>
+    <string name="terms_checkbox">" Términos y condiciones"</string>
+    <string name="signup_button">Crear una cuenta</string>
+    <string name="cr_ez_un_compte">CREAR UNA CUENTA</string>
 </resources>

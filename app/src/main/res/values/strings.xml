@@ -34,4 +34,13 @@
     <string name="remember_checkbox">Se souvenir de moi</string>
     <string name="forgot_password_button">Mot de passe oublié?</string>
     <string name="login_button">Connexion</string>
+    <string name="signup_title">créer un compte</string>
+    <string name="prenom_signup">Prénom</string>
+    <string name="nom_signup">Nom</string>
+    <string name="email_signup">Courriel</string>
+    <string name="password_signup">Mot de passe</string>
+    <string name="confirm_password_login">Confirmer le mot de passe</string>
+    <string name="terms_checkbox">Termes et conditions</string>
+    <string name="signup_button">Créer un compte</string>
+    <string name="cr_ez_un_compte">CRÉEZ UN COMPTE</string>
 </resources>

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,10 +25,10 @@
     <!-- Remember me -->
 
     <TextView
-        android:id="@+id/login_title"
+        android:id="@+id/signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONNEXION UTILISATEUR"
+        android:text="@string/login_title"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -38,13 +39,13 @@
         app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
     <EditText
-        android:id="@+id/Email_login"
+        android:id="@+id/nom_signup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/rouned_texttile"
-        android:hint="Courriel"
+        android:hint="@string/Email_login"
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#888888"
@@ -52,17 +53,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        app:layout_constraintTop_toBottomOf="@+id/signup_title"
         app:layout_constraintVertical_bias="0.072" />
 
     <EditText
-        android:id="@+id/password_login"
+        android:id="@+id/confirm_password_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/rouned_texttile"
-        android:hint="Mot de passe"
+        android:hint="@string/password_login"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#000000"
@@ -71,31 +72,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email_login"
+        app:layout_constraintTop_toBottomOf="@+id/nom_signup"
         app:layout_constraintVertical_bias="0.077" />
 
     <CheckBox
-        android:id="@+id/remember_checkbox"
+        android:id="@+id/terms_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Se souvenir de moi"
+        android:text="@string/remember_checkbox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_login"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_login"
         app:layout_constraintVertical_bias="0.126" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connexion"
+        android:text="@string/login_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_login"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_login"
         app:layout_constraintVertical_bias="0.481" />
 
     <TextView
@@ -103,10 +104,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
-        android:text="Mot de passe oublié?"
+        android:text="@string/forgot_password_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_login"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_login"
         app:layout_constraintVertical_bias="0.179" />
 
     <FrameLayout
