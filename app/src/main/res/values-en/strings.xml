@@ -23,4 +23,13 @@
     <string name="remember_checkbox">Remember me</string>
     <string name="forgot_password_button">Forgot password?</string>
     <string name="login_button">Login</string>
+    <string name="signup_title">sign up</string>
+    <string name="prenom_signup">First Name</string>
+    <string name="nom_signup">Last Name</string>
+    <string name="email_signup">Email</string>
+    <string name="password_signup">Password</string>
+    <string name="confirm_password_login">Confirm password</string>
+    <string name="terms_checkbox">Terms and conditions</string>
+    <string name="signup_button">Create account</string>
+    <string name="cr_ez_un_compte">CREATE ACCOUNT</string>
 </resources>
