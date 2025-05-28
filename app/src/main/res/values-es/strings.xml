@@ -17,6 +17,15 @@
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
     <string name="venement">evento</string>
+    <string name="ajouter_un_v_nement">Adicionar um evento</string>
+    <string name="nom_titre_de_l_evenement">Nome/título do evento</string>
+    <string name="type_de_l_evenement">tipo de evento</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Ubicación del evento (dirección - ¿en línea?)</string>
+    <string name="description_de_l_v_nement_ici">Descripción del evento aquí</string>
+    <string name="date_label">Fecha del evento (seleccione aquí)</string>
+    <string name="time_picker">Hora del evento (seleccione aquí)</string>
+    <string name="ajouter_btn">Agregar</string>
+    <string name="btn_annuler">Cancelar</string>
     <string name="login_title">INICIO DE SESIÓN DE USUARIO</string>
     <string name="Email_login">"Correo electrónico "</string>
     <string name="password_login">Contraseña</string>
