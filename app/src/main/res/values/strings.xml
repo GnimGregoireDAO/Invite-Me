@@ -1,11 +1,13 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Invite@Me</string>
     <string name="my_events">Mes événements</string>
-    <string name="event_title">Formation de %1$s</string>
+    <string name="event_title" tools:ignore="DuplicateDefinition">Formation de %1$s</string>
     <string name="event_date">Lundi, 12 mai à 18:00</string>
     <string name="event_address">123 rue Beaubien, Montréal, Canada</string>
     <string name="events_list">Liste des événements</string>
     <string name="search_events">Rechercher des événements</string>
+    <string name="suppress_events">Supprimer</string>
+    <string name="add_events">ajouter</string>
     
     <!-- Menus -->
     <string name="menu_change_language">Changer de langue</string>
@@ -16,4 +18,15 @@
     <!-- Messages -->
     <string name="current_language">Langue actuelle : %1$s</string>
     <string name="language_changed">Langue changée en %1$s</string>
+    
+    <!-- Edit Event Screen -->
+    <string name="edit_event">Modifier lévénement</string>
+    <string name="event_title_head">Titre</string>
+    <string name="event_description">Description</string>
+    <string name="event_date_added">Date dajout</string>
+    <string name="event_date_modified">Date de modification</string>
+    <string name="event_location_id">ID du lieu</string>
+    <string name="save">Enregistrer</string>
+    <string name="event_updated">Événement mis à jour</string>
+    <string name="delete">Supprimer</string>
 </resources>

@@ -6,6 +6,8 @@
     <string name="event_address">123 calle Beaubien, Montreal, Canadá</string>
     <string name="events_list">Lista de eventos</string>
     <string name="search_events">Buscar eventos</string>
+    <string name="suppress_events">Suprimir</string>
+    <string name="add_events">agregar</string>
     
     <!-- Menus -->
     <string name="menu_change_language">Cambiar idioma</string>
@@ -16,4 +18,15 @@
     <!-- Messages -->
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
+
+    <!-- Editar pantalla de evento -->
+    <string name="edit_event">Editar evento</string>
+    <string name="event_title_head">Título</string>
+    <string name="event_description">Descripción</string>
+    <string name="event_date_added">Fecha de creación</string>
+    <string name="event_date_modified">Fecha de modificación</string>
+    <string name="event_location_id">ID del lugar</string>
+    <string name="save">Guardar</string>
+    <string name="event_updated">Evento actualizado</string>
+    <string name="delete">Supprimir</string>
 </resources>

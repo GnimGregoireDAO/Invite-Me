@@ -13,6 +13,6 @@
     <color name="eventCardText">#673AB7</color>
     <color name="eventCardIcon">#CCCCCC</color>
     
-    <color name="listBackground">#1E1E1E</color>
+    <color name="listBackground">#FFFFFF</color>
     <color name="headerBackground">#FFFFFF</color>
 </resources>
