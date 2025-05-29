@@ -65,13 +65,13 @@ class EvenementListActivity : AppCompatActivity() {
                 val sampleEvents = listOf(
                     Evenement(0, "Formation avancée", "Formation sur les technologies mobiles", 
                             Timestamp(System.currentTimeMillis()), 
-                            Timestamp(System.currentTimeMillis())),
+                            Timestamp(System.currentTimeMillis()), 1),
                     Evenement(0, "Atelier débutant", "Atelier d'introduction à Android", 
                             Timestamp(System.currentTimeMillis() + 86400_000), 
-                            Timestamp(System.currentTimeMillis() + 86400_000)),
+                            Timestamp(System.currentTimeMillis() + 86400_000), 1),
                     Evenement(0, "Soirée quiz", "Soirée conviviale avec quiz technique", 
                             Timestamp(System.currentTimeMillis() + 2 * 86400_000), 
-                            Timestamp(System.currentTimeMillis() + 2 * 86400_000))
+                            Timestamp(System.currentTimeMillis() + 2 * 86400_000), 1)
                 )
                 
                 // Ajouter les événements à la base de données
