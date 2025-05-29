@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
@@ -14,14 +15,19 @@ import com.inviteme.model.database.AppDatabase
 import com.inviteme.model.entities.Evenement
 import com.inviteme.model.repos.EvenementRepository
 import com.inviteme.utils.LanguageHelper
+import com.inviteme.viewmodel.EvenementViewModel
+import com.inviteme.viewmodel.EvenementViewModelFactory
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.sql.Timestamp
 
 class EvenementListActivity : AppCompatActivity() {
-      private lateinit var binding: ActivityEvenementListBinding
+    private lateinit var binding: ActivityEvenementListBinding
     private lateinit var evenementRepository: EvenementRepository
+    private val evenementViewModel: EvenementViewModel by viewModels {
+        EvenementViewModelFactory(evenementRepository)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,19 +47,25 @@ class EvenementListActivity : AppCompatActivity() {
         
         setupRecyclerView()
     }    private fun setupRecyclerView() {
-        // Configure le RecyclerView avec adaptateur vide
-        val adapter = EvenementAdapter(emptyList())
+        val adapter = EvenementAdapter(
+            emptyList(),
+            onEdit = { evenement ->
+                // Naviguer vers l'écran de modification
+                val intent = ModifierEvenementActivity.newIntent(this, evenement.id)
+                startActivity(intent)
+            },
+            onDelete = { evenement ->
+                evenementViewModel.supprimerEvenement(evenement)
+            }
+        )
         binding.rvEvenements.layoutManager = LinearLayoutManager(this)
         binding.rvEvenements.adapter = adapter
-        
         // Observe les evenements de la database
-        evenementRepository.getAll().observe(this, Observer { events ->
-            // If database is empty, create sample events
+        evenementViewModel.evenements.observe(this, Observer { events ->
             if (events.isEmpty()) {
                 createSampleEvents()
             } else {
-                // Update adapter with events from database
-                (binding.rvEvenements.adapter as EvenementAdapter).updateEvents(events)
+                adapter.updateEvents(events)
             }
         })
     }

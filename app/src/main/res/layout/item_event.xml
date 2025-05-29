@@ -22,53 +22,80 @@
             <!-- Zone de l'icône -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="138dp"
                 android:background="#FFFFFF">
-                
+
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/ic_calendar"
                     android:layout_centerInParent="true"
                     android:layout_margin="16dp"
-                    android:contentDescription="Calendar icon"/>
+                    android:contentDescription="Calendar icon"
+                    android:src="@drawable/ic_calendar" />
             </RelativeLayout>
             
             <!-- Zone du texte -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="233dp"
                 android:background="@color/eventCardBackground"
+                android:orientation="vertical"
                 android:padding="16dp">
-                
+
                 <TextView
                     android:id="@+id/tvTitre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@{@string/event_title(evenement.titre)}"
-                    android:textStyle="bold"
                     android:textColor="@color/eventCardTitle"
                     android:textSize="16sp"
-                    tools:text="Formation de Joel"/>
-                
+                    android:textStyle="bold"
+                    tools:text="Formation de Joel" />
+
                 <TextView
                     android:id="@+id/tvDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="@string/event_date"
                     android:textColor="@color/eventCardTitle"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp"/>
-                    
+                    android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/tvAdresse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/event_address"
                     android:textColor="@color/eventCardTitle"
-                    android:textSize="14sp"/>
-                
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suppress_events" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_events" />
+
+                <Button
+                    android:id="@+id/Edit"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_event" />
+
+            </LinearLayout>
+
+            <!-- Boutons d'action -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="8dp">
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

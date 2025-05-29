@@ -6,13 +6,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.inviteme.databinding.ItemEventBinding
 import com.inviteme.model.entities.Evenement
 
-class EvenementAdapter(private var evenements: List<Evenement>) : 
-    RecyclerView.Adapter<EvenementAdapter.EvenementViewHolder>() {
-    
-    fun updateEvents(newEvenements: List<Evenement>) {
-        this.evenements = newEvenements
-        notifyDataSetChanged()
-    }
+class EvenementAdapter(
+    private var evenements: List<Evenement>,
+    private val onEdit: (Evenement) -> Unit,
+    private val onDelete: (Evenement) -> Unit
+) : RecyclerView.Adapter<EvenementAdapter.EvenementViewHolder>() {
     
     inner class EvenementViewHolder(val binding: ItemEventBinding) : 
         RecyclerView.ViewHolder(binding.root) {
@@ -22,6 +20,9 @@ class EvenementAdapter(private var evenements: List<Evenement>) :
             binding.evenement = evenement
             
             binding.executePendingBindings()
+            // Branche les boutons déjà présents dans le layout
+            binding.Edit.setOnClickListener { onEdit(evenement) }
+            binding.Delete.setOnClickListener { onDelete(evenement) }
         }
     }
 
@@ -36,4 +37,9 @@ class EvenementAdapter(private var evenements: List<Evenement>) :
     }
     
     override fun getItemCount(): Int = evenements.size
+
+    fun updateEvents(newEvenements: List<Evenement>) {
+        this.evenements = newEvenements
+        notifyDataSetChanged()
+    }
 }

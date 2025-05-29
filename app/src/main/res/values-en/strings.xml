@@ -6,6 +6,18 @@
     <string name="event_address">123 Beaubien St, Montreal, Canada</string>
     <string name="events_list">Events List</string>
     <string name="search_events">Search events</string>
+    <string name="suppress_events">Suppress</string>
+    <string name="add_events">add</string>
+
+    <string name="edit_event">Edit event</string>
+    <string name="event_title_head">Title</string>
+    <string name="event_description">Description</string>
+    <string name="event_date_added">Date added</string>
+    <string name="event_date_modified">Date modified</string>
+    <string name="event_location_id">Location ID</string>
+    <string name="save">Save</string>
+    <string name="event_updated">Event updated</string>
+    <string name="delete">Delete</string>
     
     <!-- Menus -->
     <string name="menu_change_language">Change language</string>
@@ -16,6 +28,7 @@
     <!-- Messages -->
     <string name="current_language">Current language: %1$s</string>
     <string name="language_changed">Language changed to %1$s</string>
+
     <string name="venement">Event</string>
     <string name="login_title">USER LOGIN</string>
     <string name="Email_login">Email</string>
@@ -41,4 +54,5 @@
     <string name="time_picker">Event TIme ( Pick here )</string>
     <string name="ajouter_btn">Add</string>
     <string name="btn_annuler">cancel</string>
+
 </resources>

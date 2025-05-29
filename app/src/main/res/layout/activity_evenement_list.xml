@@ -24,17 +24,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp">
-                
+
                 <ImageButton
                     android:id="@+id/btnMenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="1dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Menu"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"/>
-                    
+                    android:src="@android:drawable/ic_menu_sort_by_size" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,20 +44,22 @@
                     android:textColor="#888888"
                     android:layout_below="@id/btnMenu"
                     android:visibility="gone"/>
+
             </RelativeLayout>
             
             <!-- Titre principal -->
+
+            <!-- Ligne de séparation -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/my_events"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
                 android:gravity="center"
-                android:layout_marginBottom="16dp"/>
-                
-            <!-- Ligne de séparation -->
+                android:text="@string/my_events"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -69,10 +71,10 @@
             android:id="@+id/rvEvenements"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="16dp"
             android:clipToPadding="false"
+            android:padding="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_event"/>
-            
+            tools:listitem="@layout/item_event" />
+
     </LinearLayout>
 </layout>
