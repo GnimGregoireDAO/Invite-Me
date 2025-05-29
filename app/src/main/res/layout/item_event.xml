@@ -79,7 +79,7 @@
                     android:id="@+id/button2"
                     android:layout_width="114dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/add_events"/>
+                    android:text="@string/add_events" />
 
                 <Button
                     android:id="@+id/Edit"
