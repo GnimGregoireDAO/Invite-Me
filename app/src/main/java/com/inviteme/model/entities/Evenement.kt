@@ -1,5 +1,6 @@
 package com.inviteme.model.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
@@ -11,12 +12,12 @@ import java.sql.Timestamp
     foreignKeys = [
         ForeignKey(
             entity = Lieu::class,
-            parentColumns = ["id"],
-            childColumns = ["lieuId"],
+            parentColumns = ["id"], // champs dans la table d'ou la clef étrangère correspond
+            childColumns = ["lieu_id"], // champs dans la table actuelle ou la clef étrangère seras recopiée: on "recopie" les clef étrangères de la table parent vers la table enfant toujours
             onDelete = ForeignKey.CASCADE
         )
     ],
-    indices = [Index("lieuId")]
+    indices = [Index(value = ["lieu_id"])] // permet de spéicifier un index, une clef pout accélérer la recherche.
 )
 data class Evenement(
     @PrimaryKey(autoGenerate=true)
@@ -25,5 +26,6 @@ data class Evenement(
     val description: String?,
     val dateAjout: Timestamp,
     val dateModification: Timestamp,
-    val lieuId: Int? = null
+    @ColumnInfo(name = "lieu_id")
+    val lieuId: Long
 )

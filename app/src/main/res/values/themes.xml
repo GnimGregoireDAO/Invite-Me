@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.InvteMe" parent="Base.Theme.InvteMe" />
+    <style name="Theme.InvteMe.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.InvteMe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.InvteMe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

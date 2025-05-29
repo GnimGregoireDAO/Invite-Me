@@ -19,6 +19,7 @@
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
 
+
     <!-- Editar pantalla de evento -->
     <string name="edit_event">Editar evento</string>
     <string name="event_title_head">Título</string>
@@ -29,4 +30,31 @@
     <string name="save">Guardar</string>
     <string name="event_updated">Evento actualizado</string>
     <string name="delete">Supprimir</string>
+
+    <string name="venement">evento</string>
+    <string name="ajouter_un_v_nement">Adicionar um evento</string>
+    <string name="nom_titre_de_l_evenement">Nome/título do evento</string>
+    <string name="type_de_l_evenement">tipo de evento</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Ubicación del evento (dirección - ¿en línea?)</string>
+    <string name="description_de_l_v_nement_ici">Descripción del evento aquí</string>
+    <string name="date_label">Fecha del evento (seleccione aquí)</string>
+    <string name="time_picker">Hora del evento (seleccione aquí)</string>
+    <string name="ajouter_btn">Agregar</string>
+    <string name="btn_annuler">Cancelar</string>
+    <string name="login_title">INICIO DE SESIÓN DE USUARIO</string>
+    <string name="Email_login">"Correo electrónico "</string>
+    <string name="password_login">Contraseña</string>
+    <string name="remember_checkbox">"Acuérdate de mí "</string>
+    <string name="forgot_password_button">¿Has olvidado tu contraseña?</string>
+    <string name="login_button">" Acceso"</string>
+    <string name="signup_title">" inscribirse"</string>
+    <string name="prenom_signup">" Nombre de pila"</string>
+    <string name="nom_signup">" Apellido"</string>
+    <string name="email_signup">"Correo electrónico "</string>
+    <string name="password_signup">"Contraseña "</string>
+    <string name="confirm_password_login">" Confirmar Contraseña"</string>
+    <string name="terms_checkbox">" Términos y condiciones"</string>
+    <string name="signup_button">Crear una cuenta</string>
+    <string name="cr_ez_un_compte">CREAR UNA CUENTA</string>
+
 </resources>
