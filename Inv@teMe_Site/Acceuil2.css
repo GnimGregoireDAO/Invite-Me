@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e97324;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 80px; 
+}
+
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f2f2f2;
+}
+
+
+.button {
+    padding: 10px 20px;
+    background-color: #d74d12;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ab4107;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 80px); 
+    margin-top: 80px; 
+    padding: 40px 50px; 
+    background-color: #faf8f9;
+}
+
+
+.section_gauche {
+    flex: 1;
+    padding: 20px; 
+    margin-top: -30px; 
+}
+
+.section_gauche h1 {
+    font-size: 2.5rem; 
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.section_gauche p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.section_gauche i {
+    font-style: italic;
+    color: #7a7a7a;
+}
+
+.section_droite {
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    max-width: 800px; 
+    max-height: 600px; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.bouton_inscription {
+    padding: 15px 30px;
+    background-color: #e97324;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.bouton_inscription:hover {
+    background-color: #cf4900;
+}
+
+
+#decouvrir {
+    padding: 60px 20px;
+    background-color: #f7f3e7;
+    text-align: center;
+}
+
+#decouvrir h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#decouvrir p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+
+#comment {
+    padding: 60px 20px;
+    background-color: #f7f3e7;
+    text-align: center;
+}
+
+#comment h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#comment p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+
+#footer {
+    padding: 20px;
+    background-color: #e97324;
+    color: white;
+    text-align: center;
+}
+
+#footer h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+#footer p {
+    font-size: 1rem;
+}
+
+.group-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.group-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+#groupes h2 {
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .section_gauche h1 {
+        font-size: 2.5rem;
+    }
+
+    .section_gauche p {
+        font-size: 1rem;
+    }
+
+    .section_droite .image {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    #decouvrir,
+    #comment {
+        padding: 40px 20px;
+    }
+
+    .bouton_inscription {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+

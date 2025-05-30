@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="author"
+      content="DAO Gnim Gregoire, Tsafack Joël Bertrand, Niko Daryl Lucienne"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Inv@teMe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Inv@teMe</h1>
+      </div>
+      <nav class="nav">
+        <a href="../acceuil.html">Accueil</a>
+        <a href="features.html">Fonctionnalités</a>
+        <a href="download.html">Télécharger</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main style="margin-top: 80px; padding: 4rem 0">
+      <!-- Hero Section -->
+      <section class="contact-hero">
+        <div class="container text-center">
+          <h1 class="display-4 text-white mb-4">Contactez-nous</h1>
+          <p class="lead text-white">
+            Nous sommes là pour vous aider. N'hésitez pas à nous contacter !
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Form & Info -->
+      <section class="contact-section py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Formulaire de contact -->
+            <div class="col-lg-8 mb-5">
+              <div class="contact-form-card">
+                <h2 class="text-gradient mb-4">Envoyez-nous un message</h2>
+                <form id="contactForm" action="#" method="POST">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName" class="form-label">Prénom *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName" class="form-label">Nom *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Sujet *</label>
+                    <select
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      required
+                    >
+                      <option value="">Choisissez un sujet</option>
+                      <option value="support">Support technique</option>
+                      <option value="bug">Signaler un bug</option>
+                      <option value="feature">Suggestion d'amélioration</option>
+                      <option value="partnership">Partenariat</option>
+                      <option value="other">Autre</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="6"
+                      required
+                      placeholder="Décrivez votre demande en détail..."
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="privacy"
+                      name="privacy"
+                      required
+                    />
+                    <label class="form-check-label" for="privacy">
+                      J'accepte que mes données soient utilisées pour répondre à
+                      ma demande *
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Informations de contact -->
+            <div class="col-lg-4">
+              <div class="contact-info-card">
+                <h3 class="text-gradient mb-4">Informations de contact</h3>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h5>Email</h5>
+                    <p>
+                      <a href="mailto:daogregoire09@gmail.com"
+                        >daogregoire09@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h5>Téléphone</h5>
+                    <p><a href="tel:+14382829977">438 282 9977</a></p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h5>Adresse</h5>
+                    <p>
+                      1597 rue Saint Michel<br />
+                      Montréal, QC J6W 3J1<br />
+                      Canada
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-building"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h5>Entreprise</h5>
+                    <p>MGSE PRODUCTIONS</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Réseaux sociaux -->
+              <div class="social-card mt-4">
+                <h4 class="text-gradient mb-3">Suivez-nous</h4>
+                <div class="social-links">
+                  <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section py-5" style="background: #f8f6ff">
+        <div class="container">
+          <h2 class="text-center text-gradient mb-5">Questions Fréquentes</h2>
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="accordion" id="contactFaq">
+                <div class="card">
+                  <div class="card-header" id="faq1">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse1"
+                      >
+                        Comment puis-je signaler un bug dans l'application ?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="faqCollapse1"
+                    class="collapse show"
+                    data-parent="#contactFaq"
+                  >
+                    <div class="card-body">
+                      Utilisez le formulaire ci-dessus en sélectionnant
+                      "Signaler un bug" comme sujet. Décrivez le problème en
+                      détail avec les étapes pour le reproduire.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="faq2">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse2"
+                      >
+                        Quel est le délai de réponse ?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="faqCollapse2"
+                    class="collapse"
+                    data-parent="#contactFaq"
+                  >
+                    <div class="card-body">
+                      Nous nous efforçons de répondre dans les 24-48 heures. Les
+                      demandes urgentes sont traitées en priorité.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="faq3">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse3"
+                      >
+                        Puis-je proposer de nouvelles fonctionnalités ?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="faqCollapse3"
+                    class="collapse"
+                    data-parent="#contactFaq"
+                  >
+                    <div class="card-body">
+                      Absolument ! Sélectionnez "Suggestion d'amélioration" et
+                      décrivez votre idée. Nous valorisons les retours de nos
+                      utilisateurs.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="faq4">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse4"
+                      >
+                        L'application est-elle disponible pour iOS ?
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="faqCollapse4"
+                    class="collapse"
+                    data-parent="#contactFaq"
+                  >
+                    <div class="card-body">
+                      Actuellement, Inv@teMe est disponible uniquement pour
+                      Android. Une version iOS est en cours de développement.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support Section -->
+      <section class="support-section py-5">
+        <div class="container text-center">
+          <h2 class="text-gradient mb-4">Besoin d'aide immédiate ?</h2>
+          <p class="lead mb-4">
+            Consultez notre documentation ou contactez notre équipe
+          </p>
+          <div class="support-buttons">
+            <a href="#" class="btn btn-outline-primary btn-lg me-3">
+              <i class="fas fa-book me-2"></i>Documentation
+            </a>
+            <a
+              href="mailto:daogregoire09@gmail.com"
+              class="btn btn-primary btn-lg"
+            >
+              <i class="fas fa-envelope me-2"></i>Contact direct
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <h1>Équipe Geai Bleu</h1>
+        <p>
+          Développé par DAO Gnim Gregoire, Tsafack Joël Bertrand, Niko Daryl
+          Lucienne<br />
+          MGSE PRODUCTIONS<br />
+          Montréal, Québec<br />
+          Contact: daogregoire09@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .contact-hero {
+        background: linear-gradient(135deg, #7360f2 0%, #ba68c8 100%);
+        padding: 4rem 0;
+        position: relative;
+      }
+
+      .contact-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff08" points="0,0 1000,300 1000,1000 0,700"/></svg>');
+        background-size: cover;
+      }
+
+      .contact-form-card,
+      .contact-info-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(115, 96, 242, 0.1);
+        height: 100%;
+      }
+
+      .form-label {
+        color: #7360f2;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .form-control {
+        border: 2px solid #e1bee7;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-control:focus {
+        border-color: #7360f2;
+        box-shadow: 0 0 0 0.2rem rgba(115, 96, 242, 0.25);
+      }
+
+      .form-check-input {
+        border: 2px solid #e1bee7;
+      }
+
+      .form-check-input:checked {
+        background-color: #7360f2;
+        border-color: #7360f2;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #e1bee7;
+      }
+
+      .contact-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #7360f2 0%, #ba68c8 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+
+      .contact-details h5 {
+        color: #7360f2;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .contact-details p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .contact-details a {
+        color: #7360f2;
+        text-decoration: none;
+      }
+
+      .contact-details a:hover {
+        color: #ba68c8;
+        text-decoration: underline;
+      }
+
+      .social-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(115, 96, 242, 0.1);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .social-link {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #7360f2 0%, #ba68c8 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(115, 96, 242, 0.3);
+        color: white;
+        text-decoration: none;
+      }
+
+      .faq-section .card {
+        border: 1px solid #e1bee7;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .faq-section .card-header {
+        background: white;
+        border-bottom: 1px solid #e1bee7;
+      }
+
+      .faq-section .btn-link {
+        color: #7360f2;
+        text-decoration: none;
+        font-weight: 600;
+        width: 100%;
+        text-align: left;
+      }
+
+      .faq-section .btn-link:hover {
+        text-decoration: none;
+        color: #ba68c8;
+      }
+
+      .support-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 768px) {
+        .contact-form-card,
+        .contact-info-card {
+          margin-bottom: 2rem;
+        }
+
+        .support-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .support-buttons .btn {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+
+    <script>
+      // Gestion du formulaire de contact
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Simulation d'envoi
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+
+          submitBtn.innerHTML =
+            '<i class="fas fa-spinner fa-spin me-2"></i>Envoi en cours...';
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            submitBtn.innerHTML =
+              '<i class="fas fa-check me-2"></i>Message envoyé !';
+            submitBtn.style.background = "#28a745";
+
+            setTimeout(() => {
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+              submitBtn.style.background = "";
+              this.reset();
+            }, 3000);
+          }, 2000);
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
