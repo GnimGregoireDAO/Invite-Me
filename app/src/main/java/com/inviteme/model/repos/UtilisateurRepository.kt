@@ -6,7 +6,7 @@ import com.inviteme.model.entities.Evenement
 import com.inviteme.model.entities.Utilisateur
 
 class UtilisateurRepository(private val utilisateurDAO: UtilisateurDAO) {
-    suspend fun ajouterEvenement(event: Utilisateur){
+    suspend fun ajouterUtilisateur(event: Utilisateur){
         utilisateurDAO.ajouterUtilisateur(event)
     }
 
@@ -14,18 +14,24 @@ class UtilisateurRepository(private val utilisateurDAO: UtilisateurDAO) {
         return utilisateurDAO.getAll()
     }
 
-    // Récupérer un événement par son ID
+    // Récupérer un utilisateur par son ID
     suspend fun getEvenementById(id: Int): Utilisateur? {
         return utilisateurDAO.getById(id)
     }
 
+    // Récupérer un utilisateur par son Email et password
+    suspend fun getParEmailEtNom(email: String, nom: String): Utilisateur? {
+        return utilisateurDAO.getByEmailAndPassword(email, nom)
+    }
 
-    // Supprimer un événement par son ID
+
+
+    // Supprimer un utilisateur par son ID
     suspend fun supprimerEvenement(id: Int): Int {
         return utilisateurDAO.deleteById(id)
     }
 
-    // Supprimer un événement par l'objet
+    // Supprimer un utilisateur par l'objet
     suspend fun supprimerEvenement(evenement: Utilisateur) {
         utilisateurDAO.delete(evenement)
     }
