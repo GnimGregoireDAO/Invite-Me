@@ -6,7 +6,6 @@ pages:
   stage: deploy
   script:
     - echo "Déploiement du site vitrine..."
-    - npm install  # Installation des dépendances (si nécessaire)
     - npm run build || echo "Pas de script de build défini, passage direct à la publication"
     - mkdir -p public
     - cp -r Inv@teMe_Site/* public/  # Copie le contenu vers le dossier public
