@@ -6,75 +6,90 @@
 
     </data>
     
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/listBackground">
+        android:layout_height="match_parent">
 
-        <!-- En-tête avec le titre -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/headerBackground"
-            android:orientation="vertical">
-            
-            <!-- Menu hamburger et titre -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
-
-                <ImageButton
-                    android:id="@+id/btnMenu"
-                    android:layout_width="60dp"
-                    android:layout_height="48dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="1dp"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="Menu"
-                    android:src="@android:drawable/ic_menu_sort_by_size" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/events_list"
-                    android:textSize="14sp"
-                    android:layout_marginTop="8dp"
-                    android:textColor="#888888"
-                    android:layout_below="@id/btnMenu"
-                    android:visibility="gone"/>
-
-            </RelativeLayout>
-            
-            <!-- Titre principal -->
-
-            <!-- Ligne de séparation -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="@string/my_events"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#E0E0E0"/>
-        </LinearLayout>
-        
-        <!-- Liste des événements -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvEvenements"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:clipToPadding="false"
-            android:padding="16dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_event" />
+            android:orientation="vertical"
+            android:background="@drawable/gradient_list_background">
 
-    </LinearLayout>
+            <!-- En-tête avec le titre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headerBackground"
+                android:orientation="vertical">
+                
+                <!-- Menu hamburger et titre -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/btnMenu"
+                        android:layout_width="60dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="1dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Menu"
+                        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/events_list"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#888888"
+                        android:layout_below="@id/btnMenu"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                
+                <!-- Titre principal -->
+
+                <!-- Ligne de séparation -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="@string/my_events"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"/>
+            </LinearLayout>
+            
+            <!-- Liste des événements -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEvenements"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_event" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAjouterEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/add_event_fab_desc"
+            app:srcCompat="@drawable/ic_add" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

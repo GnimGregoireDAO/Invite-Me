@@ -13,7 +13,7 @@
         android:theme="@style/Theme.InvteMe"
         tools:targetApi="31">
         <activity
-            android:name=".ui.SignUpActivity"
+            android:name=".ui.EvenementListActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +22,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.inviteme.ui.ModifierEvenementActivity" />
+        <activity
+            android:name=".ui.ModifierEvenementActivity"
+            android:exported="false" />
 
-
+        <activity
+            android:name=".ui.AjouterEvenementActivity"
+            android:exported="false" />
 
         <activity
             android:name=".ui.VoirEvenementActivity"
@@ -36,9 +40,6 @@
 <!--             <category android:name="android.intent.category.LAUNCHER" />-->
 <!--             </intent-filter> -->
         </activity>
-        <activity
-            android:name=".ui.EvenementListActivity"
-            android:exported="false">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -46,7 +47,7 @@
 
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
-        </activity>
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="false">

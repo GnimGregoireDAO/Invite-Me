@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Invite@Me</string>
     <string name="my_events">Mis eventos</string>
-    <string name="event_title">Formación de %1$s</string>
-    <string name="event_date">Lunes, 12 de mayo a las 18:00</string>
-    <string name="event_address">123 calle Beaubien, Montreal, Canadá</string>
+    <string name="event_title">Título del evento</string>
+    <string name="event_date">Fecha del evento</string>
+    <string name="event_address">Dirección del evento</string>
     <string name="events_list">Lista de eventos</string>
     <string name="search_events">Buscar eventos</string>
-    <string name="suppress_events">Suprimir</string>
-    <string name="add_events">agregar</string>
+    <string name="suppress_events">Eliminar</string>
+    <string name="add_events">Añadir</string>
     
     <!-- Menus -->
     <string name="menu_change_language">Cambiar idioma</string>
@@ -19,42 +19,62 @@
     <string name="current_language">Idioma actual: %1$s</string>
     <string name="language_changed">Idioma cambiado a %1$s</string>
 
-
     <!-- Editar pantalla de evento -->
     <string name="edit_event">Editar evento</string>
-    <string name="event_title_head">Título</string>
+    <string name="event_title_head">Título del evento</string>
     <string name="event_description">Descripción</string>
     <string name="event_date_added">Fecha de creación</string>
-    <string name="event_date_modified">Fecha de modificación</string>
+    <string name="event_date_modified">Fecha de modificación (AAAA-MM-DD HH:MM:SS)</string>
     <string name="event_location_id">ID del lugar</string>
     <string name="save">Guardar</string>
     <string name="event_updated">Evento actualizado</string>
-    <string name="delete">Supprimir</string>
 
-    <string name="venement">evento</string>
-    <string name="ajouter_un_v_nement">Adicionar um evento</string>
-    <string name="nom_titre_de_l_evenement">Nome/título do evento</string>
-    <string name="type_de_l_evenement">tipo de evento</string>
-    <string name="lieu_de_l_v_nement_addresse_en_ligne">Ubicación del evento (dirección - ¿en línea?)</string>
-    <string name="description_de_l_v_nement_ici">Descripción del evento aquí</string>
-    <string name="date_label">Fecha del evento (seleccione aquí)</string>
-    <string name="time_picker">Hora del evento (seleccione aquí)</string>
-    <string name="ajouter_btn">Agregar</string>
+
+    <string name="venement">Evento</string>
+    <string name="ajouter_un_v_nement">Añadir un evento</string>
+    <string name="nom_titre_de_l_evenement">Nombre/Título del evento</string>
+    <string name="type_de_l_evenement">Tipo de evento</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Lugar del evento (dirección - ¿en línea?)</string>
+    <string name="description_de_l_v_nement_ici">Descripción del evento</string>
+    <string name="date_label">Fecha del evento</string>
+    <string name="time_picker">Hora del evento</string>
+    <string name="ajouter_btn">Añadir</string>
     <string name="btn_annuler">Cancelar</string>
-    <string name="login_title">INICIO DE SESIÓN DE USUARIO</string>
-    <string name="Email_login">"Correo electrónico "</string>
+    <string name="login_title">INICIO DE SESIÓN</string>
+    <string name="Email_login">Correo electrónico</string>
     <string name="password_login">Contraseña</string>
-    <string name="remember_checkbox">"Acuérdate de mí "</string>
-    <string name="forgot_password_button">¿Has olvidado tu contraseña?</string>
-    <string name="login_button">" Acceso"</string>
-    <string name="signup_title">" inscribirse"</string>
-    <string name="prenom_signup">" Nombre de pila"</string>
-    <string name="nom_signup">" Apellido"</string>
-    <string name="email_signup">"Correo electrónico "</string>
-    <string name="password_signup">"Contraseña "</string>
-    <string name="confirm_password_login">" Confirmar Contraseña"</string>
-    <string name="terms_checkbox">" Términos y condiciones"</string>
-    <string name="signup_button">Crear una cuenta</string>
-    <string name="cr_ez_un_compte">CREAR UNA CUENTA</string>
+    <string name="remember_checkbox">Recordarme</string>
+    <string name="forgot_password_button">¿Olvidaste tu contraseña?</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="signup_title">Registrarse</string>
+    <string name="prenom_signup">Nombre</string>
+    <string name="nom_signup">Apellido</string>
+    <string name="email_signup">Correo electrónico</string>
+    <string name="password_signup">Contraseña</string>
+    <string name="confirm_password_login">Confirmar contraseña</string>
+    <string name="terms_checkbox">Términos y condiciones</string>
+    <string name="signup_button">Crear cuenta</string>
+    <string name="cr_ez_un_compte">CREAR CUENTA</string>
+    <string name="delete_event_confirmation">¿Estás seguro de que quieres eliminar este evento?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="location_details">Detalles del lugar</string>
+    <string name="location_address">Dirección</string>
+    <string name="location_country">País</string>
+    <string name="calendar_icon_desc">Icono de calendario</string>
+    <string name="add_event_fab_desc">Añadir nuevo evento</string>
 
+    <!-- Strings for Delete Confirmation Dialog -->
+    <string name="confirm_delete_title">Confirmar eliminación</string>
+    <string name="confirm_delete_message">¿Estás seguro de que quieres eliminar el evento \"%1$s\"?</string>
+    <string name="delete">Eliminar</string> <!-- Already exists, ensure it's appropriate -->
+    <string name="cancel">Cancelar</string>
+    <string name="event_deleted_toast">Evento \"%1$s\" eliminado.</string>
+
+    <string name="menu_home">menu_maison</string>
+    <string name="menu_gallery">menu_gallery</string>
+    <string name="menu_slideshow">menu_slide</string>
+    <string name="action_settings">setting</string>
+    <string name="title_dashboard">dashboard</string>
+    <string name="title_notifications">notification</string>
 </resources>

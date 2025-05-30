@@ -6,6 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import com.inviteme.model.entities.Evenement
 
 @Dao
@@ -31,4 +32,11 @@ interface EvenementDAO {
     // Méthode alternative pour supprimer un événement en utilisant l'objet entier
     @Delete
     suspend fun delete(evenement: Evenement)
+    
+    // Méthode pour mettre à jour un événement
+    @Update
+    suspend fun update(evenement: Evenement)
+
+    @Query("DELETE FROM evenements")
+    suspend fun deleteAll()
 }

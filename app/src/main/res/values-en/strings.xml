@@ -1,24 +1,21 @@
 <resources>
     <string name="app_name">Invite@Me</string>
     <string name="my_events">My Events</string>
-    <string name="event_title">%1$s\'s training</string>
-    <string name="event_date">Monday, May 12 at 6:00pm</string>
-    <string name="event_address">123 Beaubien St, Montreal, Canada</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_address">Event Address</string>
     <string name="events_list">Events List</string>
     <string name="search_events">Search events</string>
-    <string name="suppress_events">Suppress</string>
-    <string name="add_events">add</string>
+    <string name="suppress_events">Delete</string>
+    <string name="add_events">Add</string>
 
-    <string name="edit_event">Edit event</string>
+    <string name="edit_event">Edit Event</string>
     <string name="event_title_head">Title</string>
     <string name="event_description">Description</string>
-    <string name="event_date_added">Date added</string>
-    <string name="event_date_modified">Date modified</string>
+    <string name="event_date_added">Date Added</string>
+    <string name="event_date_modified">Date Modified (YYYY-MM-DD HH:MM:SS)</string>
     <string name="event_location_id">Location ID</string>
     <string name="save">Save</string>
-    <string name="event_updated">Event updated</string>
-    <string name="delete">Delete</string>
-    
     <!-- Menus -->
     <string name="menu_change_language">Change language</string>
     <string name="menu_french">French</string>
@@ -29,6 +26,8 @@
     <string name="current_language">Current language: %1$s</string>
     <string name="language_changed">Language changed to %1$s</string>
 
+    <string name="event_updated">Event updated</string>
+
     <string name="venement">Event</string>
     <string name="login_title">USER LOGIN</string>
     <string name="Email_login">Email</string>
@@ -36,23 +35,44 @@
     <string name="remember_checkbox">Remember me</string>
     <string name="forgot_password_button">Forgot password?</string>
     <string name="login_button">Login</string>
-    <string name="signup_title">sign up</string>
+    <string name="signup_title">Sign Up</string>
     <string name="prenom_signup">First Name</string>
     <string name="nom_signup">Last Name</string>
     <string name="email_signup">Email</string>
     <string name="password_signup">Password</string>
-    <string name="confirm_password_login">Confirm password</string>
+    <string name="confirm_password_login">Confirm Password</string>
     <string name="terms_checkbox">Terms and conditions</string>
-    <string name="signup_button">Create account</string>
+    <string name="signup_button">Create Account</string>
     <string name="cr_ez_un_compte">CREATE ACCOUNT</string>
-    <string name="ajouter_un_v_nement">Add an event</string>
-    <string name="nom_titre_de_l_evenement">Name/title of the event</string>
-    <string name="type_de_l_evenement">Event type</string>
-    <string name="lieu_de_l_v_nement_addresse_en_ligne">Location of the event (address - online?)</string>
-    <string name="description_de_l_v_nement_ici">The Description of you event goes here.</string>
-    <string name="date_label">Event Date ( pick here)</string>
-    <string name="time_picker">Event TIme ( Pick here )</string>
+    <string name="ajouter_un_v_nement">Add an Event</string>
+    <string name="nom_titre_de_l_evenement">Event Name/Title</string>
+    <string name="type_de_l_evenement">Event Type</string>
+    <string name="lieu_de_l_v_nement_addresse_en_ligne">Event Location (Address - Online?)</string>
+    <string name="description_de_l_v_nement_ici">Event Description</string>
+    <string name="date_label">Event Date</string>
+    <string name="time_picker">Event Time</string>
     <string name="ajouter_btn">Add</string>
-    <string name="btn_annuler">cancel</string>
+    <string name="btn_annuler">Cancel</string>
+    <string name="delete_event_confirmation">Are you sure you want to delete this event?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="location_details">Location Details</string>
+    <string name="location_address">Address</string>
+    <string name="location_country">Country</string>
+    <string name="calendar_icon_desc">Calendar Icon</string>
+    <string name="add_event_fab_desc">Add new event</string>
 
+    <!-- Strings for Delete Confirmation Dialog -->
+    <string name="confirm_delete_title">Confirm Deletion</string>
+    <string name="confirm_delete_message">Are you sure you want to delete event \"%1$s\"?</string>
+    <string name="delete">Delete</string> <!-- Already exists, ensure it's appropriate -->
+    <string name="cancel">Cancel</string>
+    <string name="event_deleted_toast">Event \"%1$s\" deleted.</string>
+
+    <string name="menu_home">menu_maison</string>
+    <string name="menu_gallery">menu_gallery</string>
+    <string name="menu_slideshow">menu_slide</string>
+    <string name="action_settings">setting</string>
+    <string name="title_dashboard">dashboard</string>
+    <string name="title_notifications">notification</string>
 </resources>
