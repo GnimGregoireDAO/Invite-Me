@@ -1,81 +1,17 @@
-stages:
-  - build
-  - test
-  - deploy
-  - sync
+# Utilisation d'une image Node.js pour exécuter le pipeline
+image: node:lts
 
-build-job:
-  stage: build
-  script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
-
-unit-test-job:
-  stage: test
-  script:
-    - echo "Running unit tests..."
-    - sleep 10
-    - echo "Code coverage is 90%"
-
-lint-test-job:
-  stage: test
-  script:
-    - echo "Linting code..."
-    - sleep 5
-    - echo "No lint issues found."
-
-deploy-job:
+# Déploiement GitLab Pages
+pages:
   stage: deploy
-  environment: production
   script:
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
-
-sync-repo:
-  stage: sync
-  script:
-    - apt-get update && apt-get install -y git curl jq
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git repo-tmp
-    - cd repo-tmp
-    - git remote set-url origin https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
-    - git fetch --all
-    - for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do git push --force origin $branch; done
-    - git push --force --tags
-
-    
-
-# sync-issues:
-#   stage: sync
-#   script:
-#     - apt-get update && apt-get install -y curl jq  # Mise à jour et installation des outils nécessaires
-#     - |
-#       # Récupération des issues depuis GitLab
-#       issues=$(curl -s -H "Private-Token: $GITLAB_TOKEN" "https://git.dti.crosemont.quebec/api/v4/projects/7773/issues")
-#       echo "------ Issues response ------"
-#       echo "$issues"
-#       echo "----------------------------"
-
-#       # Boucle pour traiter chaque issue et les envoyer à GitHub
-#       echo "$issues" | jq -c '.[]' | while read -r issue; do
-#         title=$(echo "$issue" | jq -r '.title')  # Extraction du titre
-#         body=$(echo "$issue" | jq -r '.description')  # Extraction de la description
-
-#         # Envoi de l'issue à GitHub
-#         curl -X POST \
-#           -H "Authorization: token $GITHUB_TOKEN" \
-#           -H "Accept: application/vnd.github.v3+json" \
-#           -d "{\"title\": \"$title\", \"body\": \"$body\"}" \
-#           "https://api.github.com/repos/GnimGregoireDAO/Invite-Me/issues"
-#       done
-#   variables:
-#     GITLAB_TOKEN: $GITLAB_TOKEN  # Token GitLab pour l'authentification
-#     GITHUB_TOKEN: $GITHUB_TOKEN  # Token GitHub pour l'authentification
-
-sync-tags:
-  stage: sync
-  script:
-    - apt-get update && apt-get install -y git
-    - git config --global user.email "ci-bot@example.com"
-    - git config --global user.name "CI Bot"
-    - git push --tags https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
-    - git push --all https://$GITHUB_TOKEN@github.com/GnimGregoireDAO/Invite-Me.git
+    - echo "Déploiement du site vitrine..."
+    - npm install  # Installation des dépendances (si nécessaire)
+    - npm run build || echo "Pas de script de build défini, passage direct à la publication"
+    - mkdir -p public
+    - cp -r Inv@teMe_Site/* public/  # Copie le contenu vers le dossier public
+  artifacts:
+    paths:
+      - public  # GitLab Pages déploie uniquement le contenu de 'public'
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH  # Déploiement uniquement sur la branche principale
