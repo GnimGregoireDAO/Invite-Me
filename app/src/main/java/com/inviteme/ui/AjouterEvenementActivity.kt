@@ -1,6 +1,7 @@
 package com.inviteme.ui
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.icu.util.Calendar
 import android.os.Bundle
 import android.util.Log
@@ -107,8 +108,12 @@ class AjouterEvenementActivity : AppCompatActivity() {
             Toast.makeText(this, "Nouvel evenement ajouté" , Toast.LENGTH_SHORT).show()
         }
 
+
+        // l'orsqu'on click sur annuler, on reviens vers la page de liste evenement
         binding.btnAnnuler.setOnClickListener{
-            Toast.makeText(this, "bouton ajouter cliquer" , Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, EvenementListActivity::class.java)
+
+            startActivity(intent)
         }
     }
 
@@ -134,8 +139,6 @@ class AjouterEvenementActivity : AppCompatActivity() {
 
         return calendar.timeInMillis
     }
-
-
 
 
 
