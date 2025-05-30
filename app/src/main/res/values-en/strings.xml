@@ -62,8 +62,13 @@
     <string name="location_country">Country</string>
     <string name="calendar_icon_desc">Calendar Icon</string>
     <string name="add_event_fab_desc">Add new event</string>
+    <string name="title_activity_evenement">EvenementActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 
-    <string name="btn_annuler">cancel</string>
     <string name="creer_compte_button">create account</string>
 
 

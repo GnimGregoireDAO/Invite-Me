@@ -44,18 +44,6 @@
     <string name="Email_login">Correo electrónico</string>
     <string name="password_login">Contraseña</string>
 
-    <string name="remember_checkbox">Recordarme</string>
-    <string name="forgot_password_button">¿Olvidaste tu contraseña?</string>
-    <string name="login_button">Iniciar sesión</string>
-    <string name="signup_title">Registrarse</string>
-    <string name="prenom_signup">Nombre</string>
-    <string name="nom_signup">Apellido</string>
-    <string name="email_signup">Correo electrónico</string>
-    <string name="password_signup">Contraseña</string>
-    <string name="confirm_password_login">Confirmar contraseña</string>
-    <string name="terms_checkbox">Términos y condiciones</string>
-    <string name="signup_button">Crear cuenta</string>
-    <string name="cr_ez_un_compte">CREAR CUENTA</string>
     <string name="delete_event_confirmation">¿Estás seguro de que quieres eliminar este evento?</string>
     <string name="yes">Sí</string>
     <string name="no">No</string>
@@ -93,4 +81,11 @@
     <string name="action_settings">setting</string>
     <string name="title_dashboard">dashboard</string>
     <string name="title_notifications">notification</string>
+
+        <string name="title_activity_evenement">Actividad de Evento</string>
+        <string name="navigation_drawer_open">Abrir el menú de navegación</string>
+        <string name="navigation_drawer_close">Cerrar el menú de navegación</string>
+        <string name="nav_header_title">Android Studio</string>
+        <string name="nav_header_subtitle">android.studio@android.com</string>
+        <string name="nav_header_desc">Encabezado de navegación</string>
 </resources>
