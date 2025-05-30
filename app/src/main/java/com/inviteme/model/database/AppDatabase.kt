@@ -13,7 +13,7 @@ import com.inviteme.model.entities.Evenement
 import com.inviteme.model.entities.Lieu
 import com.inviteme.model.entities.Utilisateur
 
-@Database(entities = [Evenement::class, Lieu::class, Utilisateur::class], version = 4, exportSchema = true)
+@Database(entities = [Evenement::class, Lieu::class, Utilisateur::class], version = 5, exportSchema = true)
 @TypeConverters(Converters::class)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun evenementDAO(): EvenementDAO
