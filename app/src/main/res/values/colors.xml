@@ -15,4 +15,7 @@
     
     <color name="listBackground">#1E1E1E</color>
     <color name="headerBackground">#FFFFFF</color>
+    <color name="background_color">#FFFFFF</color> <!-- clair -->
+    <color name="dark_background_color">#131416</color> <!-- sombre -->
+
 </resources>

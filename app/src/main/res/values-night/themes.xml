@@ -1,7 +1,16 @@
 <resources>
-    <!-- Base application theme. -->
+    <!-- Base application theme for dark mode -->
     <style name="Base.Theme.InvteMe" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/dark_background_color</item>
     </style>
+
+    <style name="Theme.InvteMe" parent="Base.Theme.InvteMe" />
+
+    <style name="Theme.InvteMe.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InvteMe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.InvteMe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
