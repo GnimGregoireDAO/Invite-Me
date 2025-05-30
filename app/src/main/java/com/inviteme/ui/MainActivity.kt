@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                 onSuccess = { utilisateur ->
                     Toast.makeText(this, "Connexion réussie ! Bienvenue ${utilisateur.prenom}", Toast.LENGTH_SHORT).show()
                     // Redirection possible vers une autre activité (à décommenter si besoin)
-                    // startActivity(Intent(this, DashboardActivity::class.java))
+                     startActivity(Intent(this, EvenementListActivity::class.java))
                     finish() // termine cette activité
                 },
                 // Si une erreur se produit (email inexistant ou mot de passe incorrect)
