@@ -1,5 +1,7 @@
 package com.inviteme.ui
 
+import android.annotation.SuppressLint
+import android.icu.util.Calendar
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -8,12 +10,18 @@ import android.widget.EditText
 import android.widget.TimePicker
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 import com.inviteme.R
 import com.inviteme.databinding.ActivityAjouterEvenementBinding
+import com.inviteme.exception.EvenementNonConformeException
+import com.inviteme.states.EvenmentState
+import com.inviteme.states.LieuState
+import com.inviteme.vuemodel.AjouterEvementVueModel
+import java.sql.Timestamp
 
 class AjouterEvenementActivity : AppCompatActivity() {
 
@@ -21,7 +29,7 @@ class AjouterEvenementActivity : AppCompatActivity() {
 
 
     // vue model:
-
+    private val vueModel: AjouterEvementVueModel by viewModels()
 
 
     // ui elements qui concernent l'interface
@@ -40,6 +48,7 @@ class AjouterEvenementActivity : AppCompatActivity() {
     private val TAG = "AJOUTER_EVENEMENT"
 
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -59,6 +68,7 @@ class AjouterEvenementActivity : AppCompatActivity() {
         btnAnnuler = binding.btnAnnuler
 
 
+        //vueModel = AjouterEvementVueModel(EvenmentState(), LieuState(), )
 
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -69,11 +79,64 @@ class AjouterEvenementActivity : AppCompatActivity() {
 
 
         binding.btnAjouter.setOnClickListener{
-            Toast.makeText(this, "bouton ajouté cliquer" , Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "bouton ajouté cliquer" , Toast.LENGTH_SHORT).show()
+            try {
+            // initialisation du vuemodel.eventState
+            vueModel.evenementState.titre = titreEventEntry.text.toString()
+            vueModel.evenementState.type = eventTypeEntry.text.toString()
+            vueModel.evenementState.description = descriptionEntry.text.toString()
+            vueModel.lieuState.adresse = adresseEntry.text.toString()
+            vueModel.evenementState.lieu = null
+            vueModel.evenementState.date = Timestamp(getTimestampFromPickers())
+            Toast.makeText(this, vueModel.evenementState.date.toString() , Toast.LENGTH_SHORT).show()
+            vueModel.evenementState.dateModification = Timestamp(getTimestampFromPickers()) // donc oui, ce n'est pas la date de modification haha
+
+                vueModel.ajouterEvenement(
+                    onSuccess = {
+                        Toast.makeText(this, "Nouvel evenement ajouté" , Toast.LENGTH_SHORT).show()
+                    },
+                    onError = { errorMessage ->
+                        //Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
+                        btnAjouter.text = errorMessage
+                    }
+                )
+            }catch (error: Exception){
+                Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
+            }
+
+            Toast.makeText(this, "Nouvel evenement ajouté" , Toast.LENGTH_SHORT).show()
         }
 
         binding.btnAnnuler.setOnClickListener{
             Toast.makeText(this, "bouton ajouter cliquer" , Toast.LENGTH_SHORT).show()
         }
     }
+
+    private fun getTimestampFromPickers(): Long {
+        // Récupération des valeurs des pickers
+        val year = dateEntry.year
+        val month = dateEntry.month + 1 // DatePicker mois 0-11 → converti en 1-12
+        val day = dateEntry.dayOfMonth
+
+        val hour = timePicker.hour
+        val minute = timePicker.minute
+
+        // Création du Calendar et conversion en timestamp
+        val calendar = Calendar.getInstance().apply {
+            set(Calendar.YEAR, year)
+            set(Calendar.MONTH, month - 1) // On reconvertit en format Calendar (0-11)
+            set(Calendar.DAY_OF_MONTH, day)
+            set(Calendar.HOUR_OF_DAY, hour)
+            set(Calendar.MINUTE, minute)
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+        }
+
+        return calendar.timeInMillis
+    }
+
+
+
+
+
 }
