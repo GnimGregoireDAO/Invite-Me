@@ -4,7 +4,9 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 <!--        <item name="android:background">#FFFFFF</item>-->
-        <item name="android:windowBackground">@color/background_color</item>
+<!--        android:background="@drawable/gradient_list_background-->
+<!--        <item name="android:background="@drawable/gradient_list_background></item>-->
+        <item name="android:windowBackground">@drawable/gradient_list_background</item>
     </style>
 
     <style name="Theme.InvteMe" parent="Base.Theme.InvteMe" />
