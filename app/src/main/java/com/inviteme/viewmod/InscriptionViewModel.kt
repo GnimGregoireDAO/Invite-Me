@@ -43,7 +43,7 @@ class InscriptionViewModel(application: Application) : AndroidViewModel(applicat
         viewModelScope.launch {
             try {
                 // Vérifie si un utilisateur existe déjà avec cet email et ce mot de passe
-                val utilisateurExistant = repository.getParEmailEtNom(email, password)
+                val utilisateurExistant = repository.getParEmailEtMotDePasse(email, password)
 
                 if (utilisateurExistant != null) {
                     // Si oui, on affiche une erreur

@@ -21,6 +21,10 @@ interface UtilisateurDAO {
     @Query("SELECT * FROM utilisateurs WHERE id = :id")
     suspend fun getById(id: Int): Utilisateur?
 
+    // Méthode pour lister un utilisateur par son email
+    @Query("SELECT * FROM utilisateurs WHERE email = :email")
+    suspend fun getByEmail(email: String): Utilisateur?
+
     // Méthode user par email et password
     @Query("SELECT * FROM utilisateurs WHERE email = :email AND password = :password")
     suspend fun getByEmailAndPassword(email: String, password: String): Utilisateur?
@@ -38,5 +42,11 @@ interface UtilisateurDAO {
     // Méthode alternative pour supprimer un utilisateur en utilisant l'objet entier
     @Delete
     suspend fun delete(utilisateur: Utilisateur)
+
+    @Query("SELECT COUNT(*) FROM utilisateurs WHERE email = :email")
+    suspend fun countByEmail(email: String): Int
+
+
+
 
 }

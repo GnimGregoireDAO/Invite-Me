@@ -2,37 +2,45 @@ package com.inviteme.model.repos
 
 import androidx.lifecycle.LiveData
 import com.inviteme.model.dao.UtilisateurDAO
-import com.inviteme.model.entities.Evenement
 import com.inviteme.model.entities.Utilisateur
 
 class UtilisateurRepository(private val utilisateurDAO: UtilisateurDAO) {
-    suspend fun ajouterUtilisateur(event: Utilisateur){
-        utilisateurDAO.ajouterUtilisateur(event)
+
+    // Ajouter un utilisateur
+    suspend fun ajouterUtilisateur(utilisateur: Utilisateur) {
+        utilisateurDAO.ajouterUtilisateur(utilisateur)
     }
 
+    // Obtenir la liste de tous les utilisateurs (observable)
     fun getAll(): LiveData<List<Utilisateur>> {
         return utilisateurDAO.getAll()
     }
 
     // Récupérer un utilisateur par son ID
-    suspend fun getEvenementById(id: Int): Utilisateur? {
+    suspend fun getUtilisateurById(id: Int): Utilisateur? {
         return utilisateurDAO.getById(id)
     }
 
-    // Récupérer un utilisateur par son Email et password
-    suspend fun getParEmailEtNom(email: String, nom: String): Utilisateur? {
-        return utilisateurDAO.getByEmailAndPassword(email, nom)
+    // Récupérer un utilisateur par son email et mot de passe
+    suspend fun getParEmailEtMotDePasse(email: String, motDePasse: String): Utilisateur? {
+        return utilisateurDAO.getByEmailAndPassword(email, motDePasse)
     }
 
-
-
     // Supprimer un utilisateur par son ID
-    suspend fun supprimerEvenement(id: Int): Int {
+    suspend fun supprimerUtilisateurParId(id: Int): Int {
         return utilisateurDAO.deleteById(id)
     }
 
-    // Supprimer un utilisateur par l'objet
-    suspend fun supprimerEvenement(evenement: Utilisateur) {
-        utilisateurDAO.delete(evenement)
+    // Supprimer un utilisateur par objet
+    suspend fun supprimerUtilisateur(utilisateur: Utilisateur) {
+        utilisateurDAO.delete(utilisateur)
+    }
+
+    suspend fun countByEmail(email: String): Int {
+        return utilisateurDAO.countByEmail(email)
+    }
+
+    suspend fun getParEmail(email: String): Utilisateur? {
+        return utilisateurDAO.getByEmail(email)
     }
 }

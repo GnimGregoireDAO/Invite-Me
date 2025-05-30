@@ -56,5 +56,6 @@
     <string name="terms_checkbox">" Términos y condiciones"</string>
     <string name="signup_button">Crear una cuenta</string>
     <string name="cr_ez_un_compte">CREAR UNA CUENTA</string>
+    <string name="creer_compte_button">crear una cuenta</string>
 
 </resources>
