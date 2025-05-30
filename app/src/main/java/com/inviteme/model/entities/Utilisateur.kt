@@ -5,16 +5,13 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.sql.Timestamp
 
-@Entity(tableName = "Utilisateurs")
+@Entity(tableName = "utilisateurs")
 data class Utilisateur(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
     @ColumnInfo(name = "email")
     val email: String,
-
-    @ColumnInfo(name = "nom")
-    val nom: String,
 
     @ColumnInfo(name = "prenom")
     val prenom: String,
