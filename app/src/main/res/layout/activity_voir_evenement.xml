@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvTitre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Titre de L'evenement"
@@ -87,7 +87,7 @@
             tools:layout_editor_absoluteY="637dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="12 mai 9:00 - 18:00"
@@ -100,7 +100,7 @@
             tools:layout_editor_absoluteY="637dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvAdresse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="123 rue de beaubien, Montréal, Canada"
@@ -113,7 +113,7 @@
             tools:layout_editor_absoluteY="637dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10pt"

@@ -8,14 +8,17 @@ import androidx.room.TypeConverters
 import com.inviteme.model.converters.Converters
 import com.inviteme.model.dao.EvenementDAO
 import com.inviteme.model.dao.LieuDao
+import com.inviteme.model.dao.UtilisateurDAO
 import com.inviteme.model.entities.Evenement
 import com.inviteme.model.entities.Lieu
+import com.inviteme.model.entities.Utilisateur
 
-@Database(entities = [Evenement::class, Lieu::class], version = 5, exportSchema = false)
+@Database(entities = [Evenement::class, Lieu::class, Utilisateur::class], version = 5, exportSchema = true)
 @TypeConverters(Converters::class)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun evenementDAO(): EvenementDAO
     abstract fun lieuDao(): LieuDao
+    abstract fun utilisateurDao(): UtilisateurDAO
 
     companion object {
         @Volatile // pour que cet objet reste un singleton malgré les side thread

@@ -5,8 +5,7 @@
     android:id="@+id/main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:layout_height="match_parent" >
 
     <!-- Image / Avatar cercle -->
     <!-- Remplace par ton image -->
@@ -24,12 +23,13 @@
 
     <!-- Remember me -->
 
+
     <TextView
         android:id="@+id/signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login_title"
-        android:textColor="#000000"
+        android:textColor="?attr/colorOnBackground"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,6 +122,81 @@
         app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
+
+<!--    horizontal -->
+    <LinearLayout
+        android:id="@+id/themeContainer"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/moonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="☀️"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/sunIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="🌙"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+<!--    <androidx.appcompat.widget.SwitchCompat-->
+<!--        android:id="@+id/themeSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="☀️"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:elevation="10dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/creer_compte_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creer_compte_button"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp" />
+
+
+
 
     <!-- Forgot password-->
 </androidx.constraintlayout.widget.ConstraintLayout>

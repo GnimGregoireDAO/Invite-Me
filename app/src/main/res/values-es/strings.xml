@@ -43,6 +43,7 @@
     <string name="login_title">INICIO DE SESIÓN</string>
     <string name="Email_login">Correo electrónico</string>
     <string name="password_login">Contraseña</string>
+
     <string name="remember_checkbox">Recordarme</string>
     <string name="forgot_password_button">¿Olvidaste tu contraseña?</string>
     <string name="login_button">Iniciar sesión</string>
@@ -63,6 +64,21 @@
     <string name="location_country">País</string>
     <string name="calendar_icon_desc">Icono de calendario</string>
     <string name="add_event_fab_desc">Añadir nuevo evento</string>
+
+    <string name="remember_checkbox">"Acuérdate de mí "</string>
+    <string name="forgot_password_button">¿Has olvidado tu contraseña?</string>
+    <string name="login_button">" Acceso"</string>
+    <string name="signup_title">" inscribirse"</string>
+    <string name="prenom_signup">" Nombre de pila"</string>
+    <string name="nom_signup">" Apellido"</string>
+    <string name="email_signup">"Correo electrónico "</string>
+    <string name="password_signup">"Contraseña "</string>
+    <string name="confirm_password_login">" Confirmar Contraseña"</string>
+    <string name="terms_checkbox">" Términos y condiciones"</string>
+    <string name="signup_button">Crear una cuenta</string>
+    <string name="cr_ez_un_compte">CREAR UNA CUENTA</string>
+    <string name="creer_compte_button">crear una cuenta</string>
+
 
     <!-- Strings for Delete Confirmation Dialog -->
     <string name="confirm_delete_title">Confirmar eliminación</string>
