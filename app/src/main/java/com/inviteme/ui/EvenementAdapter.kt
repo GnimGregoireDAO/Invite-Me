@@ -8,21 +8,40 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.inviteme.databinding.ItemEventBinding
 import com.inviteme.model.entities.Evenement
+import com.inviteme.model.entities.Lieu
+import com.inviteme.model.repos.LieuRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class EvenementAdapter(
     private var evenements: List<Evenement>,
     private val onEdit: (Evenement) -> Unit,
-    private val onDelete: (Evenement) -> Unit
+    private val onDelete: (Evenement) -> Unit,
+    private val lieuRepository: LieuRepository,
+    private val coroutineScope: CoroutineScope
 ) : RecyclerView.Adapter<EvenementAdapter.EvenementViewHolder>() {
     
     inner class EvenementViewHolder(val binding: ItemEventBinding) : 
         RecyclerView.ViewHolder(binding.root) {
         
         fun bind(evenement: Evenement) {
-            // Assigner l'événement au binding pour utiliser le data binding avec @{} dans le XML
             binding.evenement = evenement
             
-            binding.executePendingBindings()
+            // Fetch and bind Lieu information
+            evenement.lieuId?.let {
+                coroutineScope.launch {
+                    val lieu = withContext(Dispatchers.IO) {
+                        lieuRepository.getLieuById(it.toInt())
+                    }
+                    binding.lieu = lieu
+                    binding.executePendingBindings() // Re-bind after lieu is fetched
+                }
+            } ?: run {
+                binding.lieu = null // No lieu associated
+                binding.executePendingBindings()
+            }
             // Branche les boutons déjà présents dans le layout
             binding.Edit.setOnClickListener { onEdit(evenement) }
             binding.Delete.setOnClickListener { onDelete(evenement) }

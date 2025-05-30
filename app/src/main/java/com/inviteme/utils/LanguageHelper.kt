@@ -11,24 +11,43 @@ import java.util.*
 class LanguageHelper {
     companion object {
         /**
-         * Obtient la langue actuelle du système
-         * à utiliser si possible plus tard pour optimiser l'internationalisation
+         * Obtient le code de langue actuel de la configuration de l'application pour un contexte donné.
          */
-        fun getCurrentLanguage(): String {
+        fun getCurrentLanguage(context: Context): String {
+            val currentLocale = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                context.resources.configuration.locales.get(0)
+            } else {
+                @Suppress("DEPRECATION")
+                context.resources.configuration.locale
+            }
+            return currentLocale?.language ?: Locale.getDefault().language
+        }
+
+        /**
+         * Obtient la langue actuelle du système
+         * à utiliser si possible plus tard pour optimiser l\'internationalisation
+         */
+        fun getCurrentSystemLanguage(): String { // Renamed from getCurrentLanguage to avoid conflict
             return Locale.getDefault().language
         }
 
         /**
          * Obtient le nom complet de la langue actuelle dans la langue locale
          */
-        fun getCurrentLanguageDisplayName(): String {
-            return Locale.getDefault().getDisplayLanguage(Locale.getDefault())
+        fun getCurrentLanguageDisplayName(context: Context): String { // Added context parameter
+            val currentLocale = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                context.resources.configuration.locales.get(0)
+            } else {
+                @Suppress("DEPRECATION")
+                context.resources.configuration.locale
+            }
+            return currentLocale?.getDisplayLanguage(currentLocale) ?: Locale.getDefault().getDisplayLanguage(Locale.getDefault())
         }
 
         /**
-         * Change la langue de l'application pour la démonstration utiliser SharedPreferences plutard pour la persistance
+         * Change la langue de l\'application pour la démonstration utiliser SharedPreferences plutard pour la persistance
          */
-        fun changeLanguage(context: Context, languageCode: String) {
+        fun changeLanguage(context: Context, languageCode: String, recreateActivity: Boolean = true) { // Added recreateActivity parameter
             val locale = Locale(languageCode)
             Locale.setDefault(locale)
             
@@ -45,8 +64,8 @@ class LanguageHelper {
             
             context.resources.updateConfiguration(config, resources.displayMetrics)
             
-            // Si le contexte est une activité, recréez-la pour appliquer les changements
-            if (context is AppCompatActivity) {
+            // Si le contexte est une activité et recreateActivity est vrai, recréez-la pour appliquer les changements
+            if (recreateActivity && context is AppCompatActivity) {
                 context.recreate()
             }
             

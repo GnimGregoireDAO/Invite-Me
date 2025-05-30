@@ -32,4 +32,13 @@ class EvenementRepository(private val evenementDao: EvenementDAO) {
     suspend fun supprimerEvenement(evenement: Evenement) {
         evenementDao.delete(evenement)
     }
+    
+    // Mettre à jour un événement
+    suspend fun updateEvenement(evenement: Evenement) {
+        evenementDao.update(evenement)
+    }
+
+    suspend fun deleteAllEvenements() {
+        evenementDao.deleteAll()
+    }
 }

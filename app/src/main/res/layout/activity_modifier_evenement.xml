@@ -49,12 +49,29 @@
             android:inputType="datetime"
             android:layout_marginTop="8dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
         <EditText
-            android:id="@+id/etLieuId"
+            android:id="@+id/etLieuAdresse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/event_location_id"
-            android:inputType="number"
+            android:hint="@string/location_address"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etLieuPays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location_country"
+            android:inputType="text"
             android:layout_marginTop="8dp"/>
 
         <Button

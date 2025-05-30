@@ -22,11 +22,9 @@ class EvenementViewModel(private val repository: EvenementRepository) : ViewMode
             val event = repository.getEvenementById(id)
             callback(event)
         }
-    }
-
-    fun updateEvenement(evenement: Evenement, onComplete: () -> Unit) {
+    }    fun updateEvenement(evenement: Evenement, onComplete: () -> Unit) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.ajouterEvenement(evenement) // Room: insert remplace si id existe
+            repository.updateEvenement(evenement)
             onComplete()
         }
     }

@@ -25,4 +25,8 @@ class LieuRepository(private val lieuDao: LieuDao) {
     suspend fun deleteLieu(lieu: Lieu) {
         lieuDao.delete(lieu)
     }
+
+    suspend fun deleteAllLieux() {
+        lieuDao.deleteAll()
+    }
 }

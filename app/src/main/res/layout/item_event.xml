@@ -5,50 +5,50 @@
         <variable
             name="evenement"
             type="com.inviteme.model.entities.Evenement" />
+        <variable
+            name="lieu"
+            type="com.inviteme.model.entities.Lieu" />
+        <import type="android.view.View"/>
     </data>
     
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="0dp">
+        app:cardCornerRadius="8dp" 
+        app:cardElevation="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             
-            <!-- Zone de l'icône -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="138dp"
+                android:layout_height="120dp" 
                 android:background="#FFFFFF">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp" 
+                    android:layout_height="50dp" 
                     android:layout_centerInParent="true"
-                    android:layout_margin="16dp"
-                    android:contentDescription="Calendar icon"
+                    android:contentDescription="@string/calendar_icon_desc" 
                     android:src="@drawable/ic_calendar" />
             </RelativeLayout>
             
-            <!-- Zone du texte -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="233dp"
+                android:layout_height="wrap_content" 
                 android:background="@color/eventCardBackground"
                 android:orientation="vertical"
                 android:padding="16dp">
-
                 <TextView
                     android:id="@+id/tvTitre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@{@string/event_title(evenement.titre)}"
+                    android:text="@{evenement.titre}"
                     android:textColor="@color/eventCardTitle"
-                    android:textSize="16sp"
+                    android:textSize="18sp" 
                     android:textStyle="bold"
                     tools:text="Formation de Joel" />
 
@@ -56,46 +56,64 @@
                     android:id="@+id/tvDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/event_date"
+                    android:layout_marginTop="8dp" 
+                    android:text='@{"Date: " + evenement.dateAjout.toString().substring(0, 10)}'
                     android:textColor="@color/eventCardTitle"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:text="Date: 2023-10-27"/>
 
                 <TextView
-                    android:id="@+id/tvAdresse"
+                    android:id="@+id/tvLieuNom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/event_address"
+                    android:layout_marginTop="4dp"
+                    android:text='@{lieu != null ? "Lieu: " + lieu.adresse : "Lieu: N/A"}'
+                    android:visibility="@{lieu != null || (evenement.lieuId != null &amp;&amp; lieu == null) ? View.VISIBLE : View.GONE}"
                     android:textColor="@color/eventCardTitle"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:text="Lieu: 123 Main St" />
 
-                <Button
-                    android:id="@+id/Delete"
+                <TextView
+                    android:id="@+id/tvLieuPays"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/suppress_events" />
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="114dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add_events" />
-
-                <Button
-                    android:id="@+id/Edit"
-                    android:layout_width="116dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit_event" />
+                    android:layout_marginTop="2dp" 
+                    android:text='@{lieu != null ? "Pays: " + lieu.pays : ""}'
+                    android:visibility="@{lieu != null ? View.VISIBLE : View.GONE}"
+                    android:textColor="@color/eventCardTitle"
+                    android:textSize="14sp"
+                    tools:text="Pays: USA" />
 
             </LinearLayout>
 
-            <!-- Boutons d'action -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="end"
-                android:layout_marginTop="8dp">
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@color/eventCardBackground">
+
+                <Button
+                    android:id="@+id/Edit"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/edit_event"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/Delete"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="@string/suppress_events"
+                    android:textColor="@android:color/holo_red_light" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

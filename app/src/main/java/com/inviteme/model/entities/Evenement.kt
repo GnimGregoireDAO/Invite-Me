@@ -27,5 +27,5 @@ data class Evenement(
     val dateAjout: Timestamp,
     val dateModification: Timestamp,
     @ColumnInfo(name = "lieu_id")
-    val lieuId: Int?
+    val lieuId: Long?
 )

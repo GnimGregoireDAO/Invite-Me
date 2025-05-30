@@ -23,4 +23,7 @@ interface LieuDao {
 
     @Delete
     suspend fun delete(lieu: Lieu)
+
+    @Query("DELETE FROM lieux")
+    suspend fun deleteAll()
 }
