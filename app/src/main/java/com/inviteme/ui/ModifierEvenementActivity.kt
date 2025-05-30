@@ -52,7 +52,7 @@ class ModifierEvenementActivity : AppCompatActivity() {
                         description = binding.etDescription.text.toString(),
                         dateAjout = Timestamp.valueOf(binding.etDateAjout.text.toString()),
                         dateModification = Timestamp.valueOf(binding.etDateModification.text.toString()),
-                        lieuId = binding.etLieuId.text.toString().toIntOrNull()
+                        lieuId = binding.etLieuId.text.toString().toLong()
                     )
                     evenementViewModel.updateEvenement(updated) {
                         runOnUiThread {

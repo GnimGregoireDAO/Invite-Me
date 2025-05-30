@@ -1,7 +1,10 @@
 package com.inviteme.ui
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.inviteme.databinding.ItemEventBinding
 import com.inviteme.model.entities.Evenement
@@ -23,6 +26,14 @@ class EvenementAdapter(
             // Branche les boutons déjà présents dans le layout
             binding.Edit.setOnClickListener { onEdit(evenement) }
             binding.Delete.setOnClickListener { onDelete(evenement) }
+
+            binding.root.setOnClickListener {
+                val intent = Intent(binding.root.context, VoirEvenementActivity::class.java)
+
+                intent.putExtra("evenementId", evenement.id)
+
+                binding.root.context.startActivity(intent)
+            }
         }
     }
 
