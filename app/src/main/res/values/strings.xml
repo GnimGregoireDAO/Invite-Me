@@ -71,5 +71,6 @@
     <string name="time_picker">Heure de l\'évènement ( sélectionnez ici )</string>
     <string name="ajouter_btn">Ajouter</string>
     <string name="btn_annuler">Annuler</string>
+    <string name="creer_compte_button">créer un compte</string>
 
 </resources>

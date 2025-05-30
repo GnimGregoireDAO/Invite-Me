@@ -54,5 +54,6 @@
     <string name="time_picker">Event TIme ( Pick here )</string>
     <string name="ajouter_btn">Add</string>
     <string name="btn_annuler">cancel</string>
+    <string name="creer_compte_button">create account</string>
 
 </resources>

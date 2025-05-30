@@ -182,7 +182,7 @@
         android:id="@+id/creer_compte_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Créer un compte"
+        android:text="@string/creer_compte_button"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="14sp"
         android:textStyle="bold"
