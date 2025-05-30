@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -87,5 +88,18 @@ class MainActivity : AppCompatActivity() {
                 }
             )
         }
+        // 🔽 Ligne ajoutée : redirection vers l'inscription quand on clique sur le bouton "Créer un compte"
+
+// Trouve la vue TextView dans le layout via son ID "creer_compte_button"
+        val creerCompteBtn = findViewById<TextView>(R.id.creer_compte_button)
+
+// Ajoute un écouteur d'événement qui se déclenche au clic sur ce TextView
+        creerCompteBtn.setOnClickListener {
+            // Crée une intention (Intent) pour démarrer l'activité SignUpActivity
+            // "this" représente le contexte actuel (MainActivity)
+            startActivity(Intent(this, SignUpActivity::class.java))
+            // Lancement de l'activité d'inscription à l'écran
+        }
+
     }
 }
