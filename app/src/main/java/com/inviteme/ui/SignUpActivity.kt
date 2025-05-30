@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         // Récupération des vues
-        val username = findViewById<EditText>(R.id.nom_signup)
+        val username = findViewById<EditText>(R.id.prenom_signup)
         val regbtn = findViewById<MaterialButton>(R.id.signup_button)
 
         // Listener du bouton
