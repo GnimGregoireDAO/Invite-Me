@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	ignorecase = true
+[remote "origin"]
+	url = https://git.dti.crosemont.quebec/2234758/GetTogether.git
+	fetch = +refs/*:refs/*
+	mirror = true
+[remote "github"]
+	url = https://github.com/GnimGregoireDAO/Invite-Me.git
+	fetch = +refs/heads/*:refs/remotes/github/*

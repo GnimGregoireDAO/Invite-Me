@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Election-Accueil</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="conteneur_haut">
+    <div class="titre">
+        <h1>
+            Cinéma
+        </h1>
+
+        <img alt="Logo du cinema" width="100" />
+    </div>
+    <div class="zone_droite">
+        <div class="menu">
+            <div>
+                <a
+                       >Accueil
+                </a>
+            </div>
+            <div>
+                <a
+                       >Affichage de tous les films
+                </a>
+            </div>
+            <div>
+                <a
+                        > Ajouter un film
+                </a>
+            </div>
+            <div>
+                <a
+                       >Recherche d'un Réalisateur
+                </a>
+            </div>
+        </div>
+        <div class="contenu">
+
+            <form class="mon_formulaire"     method="post">
+                <div>
+                    <label>Nom du réalisateur : </label>
+
+                    <input type="text"   required minlength="2" maxlength="45"  />
+                </div>
+                <input type="submit" value="Chercher le réalisateur" />
+            </form>
+            <p>Pour afficher un réalisateur : entrez le nom du réalisateur et appuyer sur le bouton</p>
+        </div>
+
+    </div>
+</div>
+<div class="conteneur_bas">
+    <div class="conteneur_bas">
+        Examen pratique  pour le cours 420-G26-RO-Applications Web 2, prof: Dini Ahamada
+    <a href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="blank">
+        <img  alt="validateur w3c" width="80" />
+    </a>
+</div>
+
+
+</body>
+</html>

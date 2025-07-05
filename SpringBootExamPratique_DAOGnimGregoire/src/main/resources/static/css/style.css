@@ -1,0 +1,129 @@
+:root {
+  --couleur1a: #BF9000; /*bleu vif*/
+  --couleur1b: #B45F06; /*bleu pâle*/
+  --couleur2a: #D9D2E9; /*orange vif*/
+  --couleur2b: #EAD1DC; /*orange pâle */
+}
+
+/* Étape 1) Ajustez le body */ 
+body {
+	background-size:80px 80px;
+	min-width:800px;
+}
+/* Étape 2) Ajustez le conteneur du haut */
+.conteneur_haut {
+	display:grid;
+	grid-template-columns: 150px auto;
+}
+.zone_droite {
+	min-height:calc(100vh - 100px);
+}
+/* Étape 3) Ajustez le conteneur du bas (pied de page)  et ses enfants*/
+.conteneur_bas {
+	padding:20px;
+	height:60px;
+	background-color:var(--couleur1a);
+	color:var(--couleur1b);
+}
+.conteneur_bas > a > img {
+	float: right;
+}
+/* Étape 4a) Ajustez la bande de titre */
+.titre {
+	background-color:var(--couleur1b);
+	color:var(--couleur1a);
+	border-right:20px var(--couleur1a) solid;
+	display:flex;
+	flex-direction:column;
+}
+/* Étape 4b) Ajustez l'affichage vertical du titre */
+.titre > h1 {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	text-transform:uppercase;
+	padding:20px;
+}
+.titre > img {
+	padding:20px;
+}
+/* Étape 5) Ajustez le menu et ses composants*/ 
+.menu {
+	display : flex;
+	flex-wrap:wrap;
+	padding-left:70px;
+	background-color:var(--couleur1b);
+	min-height:70px;
+}
+.menu > div {
+	font-weight:bold;
+	text-align:center;
+	width:138px;
+	padding:10px;
+	background-color:var(--couleur1a);
+	color:white;
+	border: black 1px solid;
+	height:48px;
+}
+.menu > div > a {
+	color:inherit;
+	text-decoration: inherit;
+}
+/* Étape 5) Ajustez les zones de contenu principales */ 
+.contenu  {
+	padding:20px;
+	border-left:20px var(--couleur2a) solid;
+	margin:20px 70px;
+	background-color:var(--couleur2b);
+	min-height:100px;
+}
+/* Étape 6) Ajustez le formulaire */ 
+.mon_formulaire {
+	padding:20px;
+	border:2px black solid;
+	border-radius:25px;
+	background-color:var(--couleur1a);
+	width:416px;
+	color:white;
+}
+.mon_formulaire > div {
+	padding:10px 10px 30px 10px;
+}
+
+.mon_formulaire>input[type=submit]{
+	white-space: normal;
+	word-wrap: break-word;
+	width:100px;
+}
+/* Bonus */
+ .menu > div:hover {
+	background-color:var(--couleur1b);
+	color:var(--couleur1a);
+}
+
+.image_parti {
+	float:right;
+	height:100px;
+}
+/*Tableau  */
+
+table,td,th {
+	border:2px black solid;
+	padding:2px;
+	border-collapse:collapse;
+}
+
+th {
+	background-color:var(--couleur1a);
+	color:white;
+	width:60px;
+}
+td {
+	background-color:white;
+	color:black;
+	width:60px;
+	text-align:center;
+}
+body {
+	margin:0px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
