@@ -1,0 +1,270 @@
+﻿import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
+import './Home.css';
+
+const Home = () => {
+  const heroRef = useRef(null);
+  const featuresRef = useRef(null);
+
+  useEffect(() => {
+    // GSAP animations pour le hero
+    const tl = gsap.timeline();
+    
+    tl.from('.hero-title', {
+      duration: 1,
+      y: 100,
+      opacity: 0,
+      ease: 'power3.out'
+    })
+    .from('.hero-subtitle', {
+      duration: 0.8,
+      y: 50,
+      opacity: 0,
+      ease: 'power2.out'
+    }, '-=0.5')
+    .from('.hero-buttons', {
+      duration: 0.8,
+      y: 30,
+      opacity: 0,
+      ease: 'power2.out'
+    }, '-=0.3')
+    .from('.floating-elements .element', {
+      duration: 1.5,
+      scale: 0,
+      rotation: 180,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'elastic.out(1, 0.5)'
+    }, '-=0.5');
+
+    // Animation continue pour les éléments flottants
+    gsap.to('.floating-elements .element', {
+      y: -20,
+      duration: 2,
+      ease: 'power1.inOut',
+      yoyo: true,
+      repeat: -1,
+      stagger: 0.3
+    });
+
+  }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  return (
+    <div className="home">
+      {/* Hero Section */}
+      <section className="hero" ref={heroRef}>
+        <div className="hero-background">
+          <div className="floating-elements">
+            <div className="element sakura">🌸</div>
+            <div className="element star">⭐</div>
+            <div className="element heart">💫</div>
+            <div className="element sakura">🌸</div>
+            <div className="element star">✨</div>
+            <div className="element heart">💝</div>
+          </div>
+        </div>
+        
+        <div className="container">
+          <div className="hero-content">
+            <motion.h1 
+              className="hero-title"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              Bienvenue sur <span className="gradient-text">Animerah</span>
+            </motion.h1>
+            
+            <motion.p 
+              className="hero-subtitle"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Votre destination ultime pour découvrir, partager et discuter 
+              de vos animes préférés avec une communauté passionnée.
+            </motion.p>
+            
+            <motion.div 
+              className="hero-buttons"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link to="/articles" className="btn btn-primary btn-large">
+                Découvrir les Articles
+              </Link>
+              <Link to="/discussions" className="btn btn-secondary btn-large">
+                Rejoindre les BigTalks
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features" ref={featuresRef}>
+        <div className="container">
+          <motion.div
+            className="features-content"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <motion.h2 
+              className="section-title"
+              variants={itemVariants}
+            >
+              Pourquoi Animerah ?
+            </motion.h2>
+            
+            <div className="features-grid">
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">📚</div>
+                <h3>Articles Exclusifs</h3>
+                <p>
+                  Découvrez des analyses approfondies, des critiques et des 
+                  actualités sur vos animes favoris, rédigées par notre équipe passionnée.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">💬</div>
+                <h3>BigTalks</h3>
+                <p>
+                  Participez à des discussions approfondies sur vos animes préférés. 
+                  Proposez des sujets de débat et échangez avec la communauté.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">🔐</div>
+                <h3>Sécurité</h3>
+                <p>
+                  Créez votre compte en toute sécurité et profitez d'une expérience 
+                  personnalisée avec respect de votre vie privée.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">🌟</div>
+                <h3>Communauté</h3>
+                <p>
+                  Rejoignez une communauté bienveillante d'otakus et partagez 
+                  votre passion pour l'univers des animes japonais.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">🎨</div>
+                <h3>Design Immersif</h3>
+                <p>
+                  Une interface moderne et intuitive inspirée de l'esthétique 
+                  anime pour une expérience visuelle unique.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0 20px 40px rgba(102, 126, 234, 0.2)"
+                }}
+              >
+                <div className="feature-icon">⚖️</div>
+                <h3>Respect Légal</h3>
+                <p>
+                  Conformité totale avec les lois canadiennes et québécoises 
+                  sur la propriété intellectuelle et la protection des données.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="cta-section">
+        <div className="container">
+          <motion.div
+            className="cta-content"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2>Prêt à rejoindre la communauté ?</h2>
+            <p>
+              Créez votre compte dès maintenant et découvrez un monde 
+              d'articles passionnants et de discussions enrichissantes.
+            </p>
+            <Link to="/register" className="btn btn-primary btn-large">
+              Commencer l'Aventure
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

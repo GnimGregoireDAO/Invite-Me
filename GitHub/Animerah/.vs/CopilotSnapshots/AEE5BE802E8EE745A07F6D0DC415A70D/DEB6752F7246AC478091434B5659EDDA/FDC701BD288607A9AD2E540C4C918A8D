@@ -1,0 +1,220 @@
+﻿# Animerah - Site de Blog et Discussions Anime
+
+Animerah est une plateforme web complète dédiée aux passionnés d'anime, permettant de publier des articles, commenter et participer à des discussions approfondies (BigTalks).
+
+## 🌟 Fonctionnalités
+
+### Pour les Visiteurs
+- **Consultation d'articles** : Parcourir et lire les articles sur les animes
+- **Recherche et filtrage** : Rechercher par titre, anime ou genre
+- **Interface responsive** : Optimisée pour mobile et desktop
+
+### Pour les Utilisateurs Connectés
+- **Système de commentaires** : Commenter les articles
+- **Demandes BigTalk** : Proposer des sujets de discussion approfondie
+- **Profil personnalisé** : Gérer son compte et ses préférences
+
+### Pour les Administrateurs
+- **Gestion des articles** : Créer, modifier, publier des articles
+- **Modération BigTalk** : Approuver ou rejeter les demandes de discussion
+- **Gestion des utilisateurs** : Administration des comptes
+
+## 🏗️ Architecture Technique
+
+### Backend (.NET 9)
+- **Framework** : ASP.NET Core 9
+- **Base de données** : SQL Server avec Entity Framework Core
+- **Authentification** : JWT + ASP.NET Identity
+- **API** : REST API avec Swagger documentation
+
+### Frontend (React)
+- **Framework** : React 19 avec Vite
+- **Animations** : Framer Motion + GSAP
+- **Routage** : React Router
+- **Gestion d'état** : Context API
+- **Notifications** : React Hot Toast
+
+### Sécurité
+- **Authentification JWT** sécurisée
+- **Hashage des mots de passe** avec BCrypt
+- **Validation des données** côté client et serveur
+- **Protection CORS** configurée
+
+## 🚀 Installation et Démarrage
+
+### Prérequis
+- .NET 9 SDK
+- Node.js 18+
+- SQL Server LocalDB
+
+### 1. Backend (ASP.NET Core)
+
+```bash
+cd Animerah.Server
+dotnet restore
+dotnet ef database update
+dotnet run
+```
+
+Le backend sera disponible sur `https://localhost:7207`
+
+### 2. Frontend (React)
+
+```bash
+cd animerah.client
+npm install
+npm run dev
+```
+
+Le frontend sera disponible sur `https://localhost:59860`
+
+### 3. Comptes par défaut
+
+Un compte administrateur est créé automatiquement :
+- **Email** : admin@animerah.com
+- **Mot de passe** : Admin123!
+
+## 📱 Design et UX
+
+### Thème Visuel
+- **Palette de couleurs** : Dégradés violets/bleus (#667eea, #764ba2)
+- **Typographie** : Roboto + Noto Sans JP pour l'authentique japonaise
+- **Animations** : Transitions fluides et effets immersifs
+- **Responsive** : Adaptation mobile-first
+
+### Expérience Utilisateur
+- **Navigation intuitive** avec menu sticky
+- **Animations GSAP** pour les interactions
+- **Feedback visuel** avec notifications toast
+- **Loading states** pour améliorer la perception de performance
+
+## ⚖️ Conformité Légale
+
+### Respect des Lois Canadiennes et Québécoises
+- **Protection des données personnelles** conforme à la PIPEDA
+- **Respect de la propriété intellectuelle** : système de modération des images
+- **Conditions d'utilisation** claires et transparentes
+- **Politique de confidentialité** détaillée
+
+### Propriété Intellectuelle
+- **Images** : Vérification obligatoire des droits d'auteur
+- **Contenu** : Modération des articles et commentaires
+- **Attribution** : Sources obligatoires pour le contenu externe
+
+## 🔧 API Endpoints
+
+### Authentification
+- `POST /api/auth/register` - Inscription
+- `POST /api/auth/login` - Connexion
+- `GET /api/auth/me` - Profil utilisateur
+
+### Articles
+- `GET /api/articles` - Liste des articles
+- `GET /api/articles/{id}` - Détail d'un article
+- `POST /api/articles` - Créer un article (Admin)
+- `PUT /api/articles/{id}` - Modifier un article
+- `DELETE /api/articles/{id}` - Supprimer un article
+
+### Commentaires
+- `GET /api/comments/article/{articleId}` - Commentaires d'un article
+- `POST /api/comments` - Ajouter un commentaire
+- `PUT /api/comments/{id}` - Modifier un commentaire
+- `DELETE /api/comments/{id}` - Supprimer un commentaire
+
+### BigTalk
+- `POST /api/bigtalk/request` - Demander un BigTalk
+- `GET /api/bigtalk/requests` - Liste des demandes
+- `POST /api/bigtalk/requests/{id}/review` - Réviser une demande (Admin)
+- `GET /api/bigtalk/talks` - BigTalks actifs
+
+## 🎨 Fonctionnalités Visuelles
+
+### Animations
+- **Hero section** avec éléments flottants
+- **Cards hover effects** avec élévation 3D
+- **Page transitions** fluides
+- **Loading spinners** thématiques
+
+### Interface
+- **Navigation responsive** avec menu mobile
+- **Système de filtres** visuels
+- **Cards articles** avec images et métadonnées
+- **Formulaires modernes** avec validation temps réel
+
+## 📊 Structure de Base de Données
+
+### Tables Principales
+- **Users** : Utilisateurs avec rôles
+- **AnimeArticles** : Articles avec métadonnées anime
+- **Comments** : Système de commentaires
+- **BigTalkRequests** : Demandes de discussion
+- **BigTalks** : Discussions approuvées
+- **BigTalkMessages** : Messages des discussions
+
+## 🛠️ Développement
+
+### Scripts utiles
+```bash
+# Backend
+dotnet watch run          # Développement avec hot reload
+dotnet ef migrations add  # Nouvelle migration
+dotnet test              # Tests unitaires
+
+# Frontend
+npm run dev              # Développement
+npm run build            # Build production
+npm run lint             # Linting
+```
+
+### Structure des dossiers
+```
+Animerah/
+├── Animerah.Server/     # Backend ASP.NET Core
+│   ├── Controllers/     # Contrôleurs API
+│   ├── Models/         # Modèles de données
+│   ├── DTOs/           # Data Transfer Objects
+│   ├── Services/       # Services métier
+│   └── Data/           # Context Entity Framework
+└── animerah.client/    # Frontend React
+    ├── src/
+    │   ├── components/ # Composants réutilisables
+    │   ├── pages/      # Pages de l'application
+    │   ├── contexts/   # Contexts React
+    │   └── services/   # Services API
+    └── public/         # Assets statiques
+```
+
+## 🌐 Déploiement
+
+### Production
+- **Backend** : Déployable sur Azure, AWS ou serveur Windows
+- **Frontend** : Déployable sur Netlify, Vercel ou CDN
+- **Base de données** : SQL Server ou Azure SQL Database
+
+### Variables d'environnement
+```
+# Backend
+ConnectionStrings__DefaultConnection=...
+Jwt__Key=...
+Jwt__Issuer=...
+Jwt__Audience=...
+
+# Frontend
+VITE_API_URL=https://api.animerah.com
+```
+
+## 🤝 Contribution
+
+Ce projet respecte les meilleures pratiques de développement :
+- **Code Clean** avec commentaires en français
+- **Architecture SOLID** pour la maintenabilité
+- **Tests unitaires** pour la fiabilité
+- **Documentation** complète
+
+## 📄 Licence
+
+Ce projet est développé dans le respect de la propriété intellectuelle et des lois canadiennes/québécoises.
+
+---
+
+**Développé avec ❤️ pour la communauté anime francophone**

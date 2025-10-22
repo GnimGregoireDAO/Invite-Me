@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:59860",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\..\\animerah.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

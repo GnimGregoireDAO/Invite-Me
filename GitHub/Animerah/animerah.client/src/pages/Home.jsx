@@ -1,0 +1,279 @@
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useAuth } from '../contexts/AuthContext';
+import './Home.css';
+
+const Home = () => {
+  const { user } = useAuth();
+  const [articles, setArticles] = useState([]);
+  const [stats, setStats] = useState({
+    articles: 0,
+    users: 0,
+    discussions: 0,
+    views: 0
+  });
+
+  useEffect(() => {
+    // Simuler le chargement des données
+    setStats({
+      articles: 127,
+      users: 1200,
+      discussions: 89,
+      views: 15430
+    });
+
+    // Simuler quelques articles récents avec de vraies images d'anime
+    setArticles([
+      {
+        id: 1,
+        title: "Les Meilleures Sorties Anime de cette Saison",
+        excerpt: "Découvrez les animes incontournables de cette saison avec nos recommandations détaillées et analyses approfondies.",
+        category: "Actualités",
+        author: "RanymH",
+        date: "2024-01-15",
+        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop"
+      },
+      {
+        id: 2,
+        title: "Guide Complet : Comment Débuter dans le Manga",
+        excerpt: "Un guide complet pour les débutants qui souhaitent découvrir l'univers fascinant du manga japonais.",
+        category: "Guide",
+        author: "Admin",
+        date: "2024-01-10",
+        image: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=400&h=200&fit=crop"
+      },
+      {
+        id: 3,
+        title: "Analyse : L'Impact Culturel de l'Animation Japonaise",
+        excerpt: "Une analyse approfondie de l'influence de l'animation japonaise sur la culture populaire mondiale.",
+        category: "Analyse",
+        author: "RanymH",
+        date: "2024-01-05",
+        image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400&h=200&fit=crop"
+      }
+    ]);
+
+    // Animation au scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(el => observer.observe(el));
+
+    return () => {
+      animatedElements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  return (
+    <div className="home-page">
+      {/* Section Héro */}
+      <section className="hero-section">
+        <div className="hero-particles">
+          {[...Array(9)].map((_, i) => (
+            <div key={i} className="particle"></div>
+          ))}
+        </div>
+        
+        <motion.div 
+          className="hero-content"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.h1 className="hero-title" variants={itemVariants}>
+            Bienvenue sur AnimeRah
+          </motion.h1>
+          
+          <motion.p className="hero-subtitle" variants={itemVariants}>
+            Votre destination ultime pour découvrir, analyser et discuter de l'univers passionnant des animes et mangas
+          </motion.p>
+          
+          <motion.div className="hero-buttons" variants={itemVariants}>
+            <Link to="/articles" className="hero-btn hero-btn-primary">
+              <i className="fas fa-book-open"></i>
+              Découvrir les Articles
+            </Link>
+            {!user && (
+              <Link to="/register" className="hero-btn hero-btn-secondary">
+                <i className="fas fa-user-plus"></i>
+                Rejoindre la Communauté
+              </Link>
+            )}
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Section Statistiques */}
+      <section className="stats-section">
+        <div className="container">
+          <div className="stats-grid animate-on-scroll">
+            <div className="stat-card card-shine">
+              <div className="stat-number">{stats.articles}</div>
+              <div className="stat-label">Articles Publiés</div>
+            </div>
+            <div className="stat-card card-shine">
+              <div className="stat-number">{stats.users.toLocaleString()}</div>
+              <div className="stat-label">Membres Actifs</div>
+            </div>
+            <div className="stat-card card-shine">
+              <div className="stat-number">{stats.discussions}</div>
+              <div className="stat-label">Discussions</div>
+            </div>
+            <div className="stat-card card-shine">
+              <div className="stat-number">{stats.views.toLocaleString()}</div>
+              <div className="stat-label">Vues Totales</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Articles Récents */}
+      <section className="recent-articles-section">
+        <div className="container">
+          <div className="section-header animate-on-scroll">
+            <h2 className="section-title">Articles Récents</h2>
+            <p className="section-subtitle">
+              Découvrez nos dernières publications sur l'univers de l'animation japonaise, 
+              des analyses approfondies aux dernières actualités
+            </p>
+          </div>
+
+          <div className="articles-grid">
+            {articles.map((article, index) => (
+              <motion.div
+                key={article.id}
+                className="article-card card-shine animate-on-scroll"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+              >
+                <img 
+                  src={article.image}
+                  alt={article.title}
+                  className="article-image"
+                  onError={(e) => {
+                    // Fallback si l'image ne charge pas
+                    e.target.src = `https://picsum.photos/400/200?random=${article.id}`;
+                  }}
+                />
+                <div className="article-content">
+                  <div className="article-meta">
+                    <span className="article-category">{article.category}</span>
+                    <span>{new Date(article.date).toLocaleDateString('fr-FR')}</span>
+                  </div>
+                  <h3 className="article-title">{article.title}</h3>
+                  <p className="article-excerpt">{article.excerpt}</p>
+                  <div className="article-author">
+                    <div className="author-avatar">
+                      {article.author[0].toUpperCase()}
+                    </div>
+                    <span className="author-name">{article.author}</span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center" style={{ marginTop: 'var(--spacing-2xl)' }}>
+            <Link to="/articles" className="btn btn-primary btn-anime">
+              <i className="fas fa-arrow-right"></i>
+              Voir Tous les Articles
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section À Propos */}
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="section-header animate-on-scroll">
+            <h2 className="section-title">À Propos d'AnimeRah</h2>
+            <p className="section-subtitle">
+              Créé par des passionnés pour des passionnés
+            </p>
+          </div>
+
+          <div className="testimonials-grid">
+            <div className="testimonial-card animate-on-scroll">
+              <p className="testimonial-text">
+                "AnimeRah est né de ma passion pour l'animation japonaise et mon expertise en développement web. 
+                J'ai voulu créer un espace où les fans peuvent s'exprimer librement sur leurs œuvres préférées."
+              </p>
+              <div className="testimonial-author">RanymH - Créateur</div>
+            </div>
+            
+            <div className="testimonial-card animate-on-scroll">
+              <p className="testimonial-text">
+                "Notre mission est de rassembler une communauté passionnée autour de l'analyse, 
+                de la discussion et de la découverte de nouveaux animes et mangas."
+              </p>
+              <div className="testimonial-author">L'équipe AnimeRah</div>
+            </div>
+            
+            <div className="testimonial-card animate-on-scroll">
+              <p className="testimonial-text">
+                "Que vous soyez novice ou expert, AnimeRah vous offre un espace pour partager 
+                vos opinions et découvrir de nouvelles perspectives sur vos œuvres favorites."
+              </p>
+              <div className="testimonial-author">Notre Communauté</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section CTA */}
+      <section className="cta-section">
+        <div className="cta-content animate-on-scroll">
+          <h2 className="cta-title">Rejoignez Notre Communauté</h2>
+          <p className="cta-subtitle">
+            Participez aux discussions, partagez vos avis et découvrez de nouveaux horizons dans l'univers de l'anime
+          </p>
+          {user ? (
+            <Link to="/discussions" className="cta-button">
+              <i className="fas fa-comments"></i>
+              Participer aux Discussions
+            </Link>
+          ) : (
+            <Link to="/register" className="cta-button">
+              <i className="fas fa-rocket"></i>
+              Commencer l'Aventure
+            </Link>
+          )}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;

@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { AuthProvider } from './contexts/AuthContext';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ProtectedRoute from './components/ProtectedRoute';
+
+// Pages
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Articles from './pages/Articles';
+import ArticleDetail from './pages/ArticleDetail';
+import Discussions from './pages/Discussions';
+import Admin from './pages/Admin';
+import Profile from './pages/Profile';
+
+import './App.css';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <AuthProvider>
+      <div className="App">
+        <Navbar />
+        
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles/:id" element={<ArticleDetail />} />
+            <Route path="/discussions" element={<Discussions />} />
+            
+            {/* Protected Routes */}
+            <Route 
+              path="/profile" 
+              element={
+                <ProtectedRoute>
+                  <Profile />
+                </ProtectedRoute>
+              } 
+            />
+            
+            {/* Admin Only Routes */}
+            <Route 
+              path="/admin/*" 
+              element={
+                <ProtectedRoute adminOnly={true}>
+                  <Admin />
+                </ProtectedRoute>
+              } 
+            />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
+      </div>
+    </AuthProvider>
+  );
+}
+
+export default App;

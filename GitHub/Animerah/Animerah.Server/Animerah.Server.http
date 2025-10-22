@@ -1,0 +1,6 @@
+@Animerah.Server_HostAddress = http://localhost:5093
+
+GET {{Animerah.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,1028 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GIT\\GitHub\\Animerah\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\services\\apiservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\services\\apiservice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\public\\animerahlogo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\public\\animerahlogo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\public\\kan.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\public\\kan.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\animerah.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\animerah.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\animerah.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\animerah.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\assets\\react.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\assets\\react.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\public\\animerah-logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\public\\animerah-logo.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\controllers\\bigtalkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\controllers\\bigtalkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\dtos\\discussiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\dtos\\discussiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\dtos\\articledtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\dtos\\articledtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\migrations\\20250930045142_initialcreatefixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\migrations\\20250930045142_initialcreatefixed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\animerah.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\animerah.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GIT\\GitHub\\Animerah\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\public\\animerah-logo.svg||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\public\\animerah-logo.svg||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\discussions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\discussions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\articles.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\articles.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\bigtalkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\bigtalkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\animearticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\animearticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\bigtalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\bigtalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|c:\\git\\github\\animerah\\animerah.server\\models\\bigtalkmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2A238F-5954-424E-A220-CA4301F38634}|Animerah.Server\\Animerah.Server.csproj|solutionrelative:animerah.server\\models\\bigtalkmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\contexts\\authcontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\contexts\\authcontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\register.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\register.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\articles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\articles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\articledetail.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\articledetail.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\articledetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\articledetail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\admin.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\admin.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\admin\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\admin\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\admin\\articlemanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\admin\\articlemanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\admin\\requestmanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\admin\\requestmanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\admin\\usermanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\admin\\usermanagement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\discussions.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\discussions.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\pages\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\pages\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\components\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\components\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\src\\styles\\components.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\src\\styles\\components.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|c:\\git\\github\\animerah\\animerah.client\\design_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{431655E4-7B41-C68A-5A56-29C15B2D821A}|animerah.client\\animerah.client.esproj|solutionrelative:animerah.client\\design_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "DESIGN_GUIDE.md",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\DESIGN_GUIDE.md",
+              "RelativeDocumentMoniker": "animerah.client\\DESIGN_GUIDE.md",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\DESIGN_GUIDE.md",
+              "RelativeToolTip": "animerah.client\\DESIGN_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-30T13:03:01.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "components.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\styles\\components.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\styles\\components.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\styles\\components.css",
+              "RelativeToolTip": "animerah.client\\src\\styles\\components.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T12:54:26.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Animerah.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Animerah.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T11:59:35.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Footer.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Footer.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\Footer.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Footer.css",
+              "RelativeToolTip": "animerah.client\\src\\components\\Footer.css",
+              "ViewState": "AgIAAJ4BAAAAAAAAAIBJwKABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T06:45:27.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Footer.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Footer.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\Footer.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Footer.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\Footer.jsx",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv3sAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T06:42:44.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AnimeRahLogo.png",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\AnimeRahLogo.png",
+              "RelativeDocumentMoniker": "animerah.client\\public\\AnimeRahLogo.png",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\AnimeRahLogo.png",
+              "RelativeToolTip": "animerah.client\\public\\AnimeRahLogo.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-09-30T06:06:56.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "kan.jpg -  [Fran\u00E7ais (France)] - Bitmap [1271x847, 24 bits, JPG]",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\kan.jpg",
+              "RelativeDocumentMoniker": "animerah.client\\public\\kan.jpg",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\kan.jpg -  [Fran\u00E7ais (France)] - Bitmap [1271x847, 24 bits, JPG]",
+              "RelativeToolTip": "animerah.client\\public\\kan.jpg -  [Fran\u00E7ais (France)] - Bitmap [1271x847, 24 bits, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-09-30T06:04:29.976Z",
+              "EditorCaption": " -  [Fran\u00E7ais (France)] - Bitmap [1271x847, 24 bits, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "animerah.client.esproj",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\animerah.client.esproj",
+              "RelativeDocumentMoniker": "animerah.client\\animerah.client.esproj",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\animerah.client.esproj",
+              "RelativeToolTip": "animerah.client\\animerah.client.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-30T06:00:07.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "react.svg",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\assets\\react.svg",
+              "RelativeDocumentMoniker": "animerah.client\\src\\assets\\react.svg",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\assets\\react.svg",
+              "RelativeToolTip": "animerah.client\\src\\assets\\react.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-30T05:59:30.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "animerah-logo.svg",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\animerah-logo.svg",
+              "RelativeDocumentMoniker": "animerah.client\\public\\animerah-logo.svg",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\animerah-logo.svg",
+              "RelativeToolTip": "animerah.client\\public\\animerah-logo.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-30T05:59:11.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250930045142_InitialCreateFixed.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Migrations\\20250930045142_InitialCreateFixed.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Migrations\\20250930045142_InitialCreateFixed.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Migrations\\20250930045142_InitialCreateFixed.cs",
+              "RelativeToolTip": "Animerah.Server\\Migrations\\20250930045142_InitialCreateFixed.cs",
+              "ViewState": "AgIAAMABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T05:58:13.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Animerah.Server.http",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Animerah.Server.http",
+              "RelativeDocumentMoniker": "Animerah.Server\\Animerah.Server.http",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Animerah.Server.http",
+              "RelativeToolTip": "Animerah.Server\\Animerah.Server.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-30T05:57:50.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Admin.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\admin\\Admin.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\admin\\Admin.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\admin\\Admin.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\admin\\Admin.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T05:00:49.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Profile.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Profile.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Profile.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Profile.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Profile.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T05:00:25.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Discussions.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Discussions.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Discussions.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Discussions.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Discussions.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:42:29.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Admin.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\Admin.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\admin\\Admin.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\Admin.css",
+              "RelativeToolTip": "animerah.client\\src\\components\\admin\\Admin.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:41:49.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "UserManagement.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\UserManagement.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\admin\\UserManagement.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\UserManagement.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\admin\\UserManagement.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:40:47.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RequestManagement.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\RequestManagement.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\admin\\RequestManagement.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\RequestManagement.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\admin\\RequestManagement.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:39:50.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ArticleManagement.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\ArticleManagement.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\admin\\ArticleManagement.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\ArticleManagement.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\admin\\ArticleManagement.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:39:21.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AdminDashboard.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\AdminDashboard.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\admin\\AdminDashboard.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\admin\\AdminDashboard.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\admin\\AdminDashboard.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:38:53.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAjwNkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-30T04:30:45.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "animerah-logo.svg",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\animerah-logo.svg",
+              "RelativeDocumentMoniker": "animerah.client\\public\\animerah-logo.svg",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\public\\animerah-logo.svg",
+              "RelativeToolTip": "animerah.client\\public\\animerah-logo.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-30T04:30:06.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Profile.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Profile.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Profile.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Profile.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Profile.jsx",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAACsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:29:54.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Admin.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Admin.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Admin.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Admin.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Admin.jsx",
+              "ViewState": "AgIAAD8AAAAAAAAAAIBJwEEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:29:44.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Discussions.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Discussions.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Discussions.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Discussions.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Discussions.jsx",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAhwJcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:29:13.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ArticleDetail.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\ArticleDetail.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\ArticleDetail.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\ArticleDetail.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\ArticleDetail.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:28:35.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ArticleDetail.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\ArticleDetail.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\ArticleDetail.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\ArticleDetail.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\ArticleDetail.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:28:07.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Articles.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Articles.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Articles.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Articles.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Articles.css",
+              "ViewState": "AgIAADICAAAAAAAAAIBJwDQCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:27:34.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Articles.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Articles.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Articles.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Articles.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Articles.jsx",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAKUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:27:13.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Auth.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Auth.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Auth.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Auth.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Auth.css",
+              "ViewState": "AgIAACQCAAAAAAAAAAAAACQCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:23:04.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Register.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Register.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Register.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Register.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Register.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:22:39.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Login.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Login.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Login.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Login.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:22:18.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\App.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\App.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\App.css",
+              "RelativeToolTip": "animerah.client\\src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:21:52.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\App.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\App.jsx",
+              "RelativeToolTip": "animerah.client\\src\\App.jsx",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:21:23.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\main.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\main.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\main.jsx",
+              "RelativeToolTip": "animerah.client\\src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:21:08.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Home.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Home.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Home.css",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Home.css",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAAABoCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:21:01.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Home.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\pages\\Home.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\pages\\Home.jsx",
+              "RelativeToolTip": "animerah.client\\src\\pages\\Home.jsx",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAvwLcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:20:35.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Navbar.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Navbar.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\Navbar.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Navbar.css",
+              "RelativeToolTip": "animerah.client\\src\\components\\Navbar.css",
+              "ViewState": "AgIAAM0BAAAAAAAAAIBJwM8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:20:04.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Navbar.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\Navbar.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\Navbar.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\Navbar.jsx",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAO8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:19:40.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ProtectedRoute.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\ProtectedRoute.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\components\\ProtectedRoute.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\components\\ProtectedRoute.jsx",
+              "RelativeToolTip": "animerah.client\\src\\components\\ProtectedRoute.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:19:20.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\index.css",
+              "RelativeDocumentMoniker": "animerah.client\\src\\index.css",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\index.css",
+              "RelativeToolTip": "animerah.client\\src\\index.css",
+              "ViewState": "AgIAADoBAAAAAAAAAAAtwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-30T04:19:05.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AuthContext.jsx",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\contexts\\AuthContext.jsx",
+              "RelativeDocumentMoniker": "animerah.client\\src\\contexts\\AuthContext.jsx",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\contexts\\AuthContext.jsx",
+              "RelativeToolTip": "animerah.client\\src\\contexts\\AuthContext.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-09-30T04:18:44.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "apiService.js",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\services\\apiService.js",
+              "RelativeDocumentMoniker": "animerah.client\\src\\services\\apiService.js",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\src\\services\\apiService.js",
+              "RelativeToolTip": "animerah.client\\src\\services\\apiService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-30T04:18:29.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\index.html",
+              "RelativeDocumentMoniker": "animerah.client\\index.html",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\index.html",
+              "RelativeToolTip": "animerah.client\\index.html",
+              "ViewState": "AgIAACEAAAAAAAAAAIBZwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-30T04:18:11.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\package.json",
+              "RelativeDocumentMoniker": "animerah.client\\package.json",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\animerah.client\\package.json",
+              "RelativeToolTip": "animerah.client\\package.json",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T04:17:54.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Animerah.Server\\appsettings.json",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\appsettings.json",
+              "RelativeToolTip": "Animerah.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T04:15:25.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Program.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Program.cs",
+              "RelativeToolTip": "Animerah.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:15:07.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BigTalkController.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\BigTalkController.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Controllers\\BigTalkController.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\BigTalkController.cs",
+              "RelativeToolTip": "Animerah.Server\\Controllers\\BigTalkController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:14:51.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Animerah.Server\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:14:21.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Controllers\\ArticlesController.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "Animerah.Server\\Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:14:06.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Animerah.Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:13:41.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Services\\JwtService.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Services\\JwtService.cs",
+              "RelativeToolTip": "Animerah.Server\\Services\\JwtService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:13:29.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DiscussionDtos.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\DiscussionDtos.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\DTOs\\DiscussionDtos.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\DiscussionDtos.cs",
+              "RelativeToolTip": "Animerah.Server\\DTOs\\DiscussionDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:13:19.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ArticleDtos.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\ArticleDtos.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\DTOs\\ArticleDtos.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\ArticleDtos.cs",
+              "RelativeToolTip": "Animerah.Server\\DTOs\\ArticleDtos.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:13:10.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\DTOs\\AuthDtos.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "Animerah.Server\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:13:01.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Animerah.Server\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:55.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BigTalkMessage.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalkMessage.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\BigTalkMessage.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalkMessage.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\BigTalkMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:42.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BigTalk.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalk.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\BigTalk.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalk.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\BigTalk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:38.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BigTalkRequest.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalkRequest.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\BigTalkRequest.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\BigTalkRequest.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\BigTalkRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:33.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\Comment.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\Comment.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:24.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AnimeArticle.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\AnimeArticle.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\AnimeArticle.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\AnimeArticle.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\AnimeArticle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:18.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Animerah.Server\\Models\\User.cs",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Models\\User.cs",
+              "RelativeToolTip": "Animerah.Server\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:12:07.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Animerah.Server.csproj",
+              "DocumentMoniker": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Animerah.Server.csproj",
+              "RelativeDocumentMoniker": "Animerah.Server\\Animerah.Server.csproj",
+              "ToolTip": "C:\\GIT\\GitHub\\Animerah\\Animerah.Server\\Animerah.Server.csproj",
+              "RelativeToolTip": "Animerah.Server\\Animerah.Server.csproj",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T04:11:54.555Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

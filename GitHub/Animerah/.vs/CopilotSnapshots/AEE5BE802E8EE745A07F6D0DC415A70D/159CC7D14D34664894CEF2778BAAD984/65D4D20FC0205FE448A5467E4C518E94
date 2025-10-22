@@ -1,0 +1,240 @@
+﻿import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useAuth } from '../contexts/AuthContext';
+import './Navbar.css';
+
+const Navbar = () => {
+  const { isAuthenticated, user, logout } = useAuth();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+    setIsMobileMenuOpen(false);
+  };
+
+  const navVariants = {
+    hidden: { y: -100 },
+    visible: { 
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  };
+
+  return (
+    <motion.nav 
+      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <div className="container">
+        <div className="nav-content">
+          {/* Logo */}
+          <Link to="/" className="logo">
+            <motion.div
+              className="logo-container"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <img 
+                src="/AnimeRahLogo.png" 
+                alt="AnimeRah" 
+                className="logo-image"
+              />
+              <div className="logo-text-container">
+                <span className="logo-text">AnimeRah</span>
+                <span className="logo-subtitle">Votre passion anime</span>
+              </div>
+            </motion.div>
+          </Link>
+
+          {/* Navigation Desktop */}
+          <div className="nav-links desktop-nav">
+            <Link to="/" className="nav-link">
+              <motion.span whileHover={{ y: -2 }}>
+                <i className="fas fa-home"></i>
+                Accueil
+              </motion.span>
+            </Link>
+            <Link to="/articles" className="nav-link">
+              <motion.span whileHover={{ y: -2 }}>
+                <i className="fas fa-book-open"></i>
+                Articles
+              </motion.span>
+            </Link>
+            <Link to="/discussions" className="nav-link">
+              <motion.span whileHover={{ y: -2 }}>
+                <i className="fas fa-comments"></i>
+                BigTalks
+              </motion.span>
+            </Link>
+            {isAuthenticated && user?.isAdmin && (
+              <Link to="/admin" className="nav-link admin-link">
+                <motion.span whileHover={{ y: -2 }}>
+                  <i className="fas fa-cog"></i>
+                  Admin
+                </motion.span>
+              </Link>
+            )}
+          </div>
+
+          {/* Actions */}
+          <div className="nav-actions">
+            {isAuthenticated ? (
+              <div className="user-menu">
+                <motion.div 
+                  className="user-avatar"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <span>{user?.displayName?.[0]?.toUpperCase() || 'U'}</span>
+                </motion.div>
+                <div className="user-dropdown">
+                  <div className="user-info">
+                    <span className="user-name">{user?.displayName}</span>
+                    <span className="user-email">{user?.email}</span>
+                  </div>
+                  <div className="dropdown-links">
+                    <Link to="/profile" className="dropdown-link">
+                      <i className="fas fa-user"></i>
+                      Profil
+                    </Link>
+                    <Link to="/my-requests" className="dropdown-link">
+                      <i className="fas fa-paper-plane"></i>
+                      Mes demandes
+                    </Link>
+                    <button onClick={handleLogout} className="dropdown-link logout-btn">
+                      <i className="fas fa-sign-out-alt"></i>
+                      Déconnexion
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="auth-buttons">
+                <Link to="/login" className="btn btn-secondary">
+                  <i className="fas fa-sign-in-alt"></i>
+                  Connexion
+                </Link>
+                <Link to="/register" className="btn btn-primary">
+                  <i className="fas fa-user-plus"></i>
+                  Inscription
+                </Link>
+              </div>
+            )}
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <motion.div 
+          className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}
+          initial={{ height: 0 }}
+          animate={{ height: isMobileMenuOpen ? 'auto' : 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="mobile-nav-links">
+            <Link 
+              to="/" 
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-home"></i>
+              Accueil
+            </Link>
+            <Link 
+              to="/articles" 
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-book-open"></i>
+              Articles
+            </Link>
+            <Link 
+              to="/discussions" 
+              className="mobile-nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <i className="fas fa-comments"></i>
+              BigTalks
+            </Link>
+            {isAuthenticated && user?.isAdmin && (
+              <Link 
+                to="/admin" 
+                className="mobile-nav-link admin-link"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <i className="fas fa-cog"></i>
+                Admin
+              </Link>
+            )}
+            
+            {!isAuthenticated && (
+              <>
+                <Link 
+                  to="/login" 
+                  className="mobile-nav-link"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <i className="fas fa-sign-in-alt"></i>
+                  Connexion
+                </Link>
+                <Link 
+                  to="/register" 
+                  className="mobile-nav-link"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <i className="fas fa-user-plus"></i>
+                  Inscription
+                </Link>
+              </>
+            )}
+            
+            {isAuthenticated && (
+              <>
+                <Link 
+                  to="/profile" 
+                  className="mobile-nav-link"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <i className="fas fa-user"></i>
+                  Profil
+                </Link>
+                <button 
+                  onClick={handleLogout}
+                  className="mobile-nav-link logout-btn"
+                >
+                  <i className="fas fa-sign-out-alt"></i>
+                  Déconnexion
+                </button>
+              </>
+            )}
+          </div>
+        </motion.div>
+      </div>
+    </motion.nav>
+  );
+};
+
+export default Navbar;

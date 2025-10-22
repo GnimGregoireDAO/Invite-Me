@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "animerah.client", "animerah.client\animerah.client.esproj", "{431655E4-7B41-C68A-5A56-29C15B2D821A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animerah.Server", "Animerah.Server\Animerah.Server.csproj", "{1A2A238F-5954-424E-A220-CA4301F38634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431655E4-7B41-C68A-5A56-29C15B2D821A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1A2A238F-5954-424E-A220-CA4301F38634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2A238F-5954-424E-A220-CA4301F38634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2A238F-5954-424E-A220-CA4301F38634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2A238F-5954-424E-A220-CA4301F38634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4038832B-FD3F-4EEB-852B-2D954386B519}
+	EndGlobalSection
+EndGlobal
